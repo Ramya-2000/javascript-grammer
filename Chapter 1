@@ -1,0 +1,12 @@
+Presentation format:
+ ECMAScript is a Standard for scripting languages such as JavaScript, JScript, etc. It is a       trademark scripting language specification. JavaScript is a language based on ECMAScript. A standard for scripting languages like JavaScript, JScript is ECMAScript.
+–>ES5 to ES10 ->It covers imports, classes,constructor,and key principles behind functional programming.
+—>import - The static import statement is used to import read only live bindings which are exported by another module. 
+–>Classes - It is a template for creating objects. They encapsulate data with code to work on that data. Classes in JS are built on prototypes but also have some syntax and semantics that are not shared with ES5 class-like semantics.
+–>The constructor method is a special method of a class for creating and initializing an object instance of that class.
+
+JavaScript--> is a text-based programming language used both on the client-side and server-side that allows you to make web pages interactive. 
+Why and Where Javascript—> It allows us to add dynamic behavior to the webpage and add special effects to the webpage. 
+*On websites, it is mainly used for validation purposes. 
+*JavaScript helps us to execute complex actions and also enables the interaction of websites with visitors.
+*The language can be used with back-end frameworks like Node. js to power the mechanics behind a web page, such as form processing and payments.
