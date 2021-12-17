@@ -1,0 +1,30 @@
+Web Console is a web-based application that enables end-users to manage their data. The console is a self-service programmed that allows us to perform operations, including download, backup, restore, and more for data management.
+Console- debugging(condition check), we can see the output at the time.
+
+Console methods- assert(),,clear(),count(),countReset(),debug(),dir(),dirxml(),error(),group(),groupCollapsed(),groupEnd(),info(),log(),profile(),profileEnd(),table(),time(),timeEnd(),timeLog(),timeStamp(),trace(),warn()
+
+
+The method console.dir() displays an interactive list of the properties of the specified JavaScript object. The output is presented as a hierarchical listing with disclosure triangles that let you see the contents of child objects.
+Syntax
+console.dir(object);
+
+The console.error() method outputs an error message to the Web console.
+Syntax
+console.error(obj1 [, obj2, ..., objN]);
+console.error(msg [, subst1, ..., substN]);
+
+The console.clear() method clears the console if the environment allows it.
+Syntax
+console.clear();
+
+The console.time() method starts a timer you can use to track how long an operation takes.
+Syntax
+console.time(label);
+
+The console.timeEnd() stops a timer that was previously started by calling console.time().
+Syntax
+console.timeEnd(label);
+
+VS→ It is used to develop computer programs, as well as websites, web apps, web services and mobile apps.VS Code helps you be instantly productive with syntax highlighting, bracket-matching, auto-indentation, box-selection, snippets, and more. 
+npm→ Npm stands for Node Package Manager. It is a package manager for the Node JavaScript platform. Npm is known as the world's largest software registry. Open-source developers all over the world use npm to publish and share their source code.
+Nodejs→Node. js is a JavaScript platform for general-purpose programming that allows users to build network applications quickly.Node. js is the JavaScript runtime environment which is based on Google's V8 Engine i.e. with the help of Node. js we can run the JavaScript outside of the browser.
