@@ -117,7 +117,7 @@ console.log(1+ Number(2)+new Number(4));
 
 
 
-Variables are used to store data values. JavaScript uses the keywords var , let and const to declare variables. An equal sign is used to assign values to variables.In JavaScript, there are three different variable types: var , let , and const . Each of these variables have several rules around how they should be used, and have different characteristics.
+Variables-->> are used to store data values. JavaScript uses the keywords var , let and const to declare variables. An equal sign is used to assign values to variables.In JavaScript, there are three different variable types: var , let , and const . Each of these variables have several rules around how they should be used, and have different characteristics.
 —>Variable declaration is definition + assignment.
 —> var declarations are globally scoped or function scoped while let and const are block scoped. var variables can be updated and re-declared within its scope; let variables can be updated but not re-declared; const variables can neither be updated nor re-declared.
 
