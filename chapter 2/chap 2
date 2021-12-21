@@ -5,7 +5,7 @@ Console methods- assert(),,clear(),count(),countReset(),debug(),dir(),dirxml(),e
 
 
 The method console.dir() displays an interactive list of the properties of the specified JavaScript object. The output is presented as a hierarchical listing with disclosure triangles that let you see the contents of child objects.
-Syntax
+Syntax 
 console.dir(object);
 
 The console.error() method outputs an error message to the Web console.
