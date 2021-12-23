@@ -1,5 +1,5 @@
 ### CHAPTER 1
-Presentation format:
+**Presentation format:**
  ECMAScript is a Standard for scripting languages such as JavaScript, JScript, etc. It is a       trademark scripting language specification. JavaScript is a language based on ECMAScript. A standard for scripting languages like JavaScript, JScript is ECMAScript.
 –>ES5 to ES10 ->It covers imports, classes,constructor,and key principles behind functional programming.
 —>import - The static import statement is used to import read only live bindings which are exported by another module. 
@@ -16,7 +16,7 @@ Why and Where Javascript—> It allows us to add dynamic behavior to the webpage
 *JavaScript is not a programming language. Instead, it is a scripting language because it uses the browser to do the dirty work. 
 *JavaScript runs on the client side of the web, which can be used to design / program how the web pages behave on the occurrence of an event.
 
-VS→ It is used to develop computer programs, as well as websites, web apps, web services and mobile apps.VS Code helps you be instantly productive with syntax highlighting, bracket-matching, auto-indentation, box-selection, snippets, and more.
+VS--->  It is used to develop computer programs, as well as websites, web apps, web services and mobile apps.VS Code helps you be instantly productive with syntax highlighting, bracket-matching, auto-indentation, box-selection, snippets, and more.
 npm→ Npm stands for Node Package Manager. It is a package manager for the Node JavaScript platform. Npm is known as the world's largest software registry. Open-source developers all over the world use npm to publish and share their source code.
 
 Nodejs—> Node. js for enterprise apps. It's a light, scalable and open-source language platform which makes it very easy to build apps even at the enterprise level also. Overall it increases the efficiency of the development process as it fills the gap between frontend and backend applications 
@@ -25,34 +25,34 @@ Web Console is a web-based application that enables end-users to manage their da
 
 
 
-console.dir()
+**console.dir()** 
 The method console.dir() displays an interactive list of the properties of the specified JavaScript object.
 Syntax
 console.dir(object);
-console.clear()
+**console.clear()**
 The console.clear() method clears the console if the environment allows it.
 Syntax
 console.clear();
-console.error()
+**console.error()**
 The console.error() method outputs an error message to the Web console.
 Syntax
 console.error(obj1 [, obj2, ..., objN]);.
 console.error(msg [, subst1, ..., substN]);
-console.time()
+**console.time()**
 The console.time() method starts a timer you can use to track how long an operation takes.
 Syntax
 console.time(label);
-console.timeEnd()
+**console.timeEnd()**
 The console.timeEnd() stops a timer that was previously started by calling console.time()
 Syntax:
 console.timeEnd(label);
-copy:
+**copy:**
 Copying JSON representation of an existing object to copy buffer:
 let object = { property1 : 1, property1 : 2, method : function(){} };
 copy(object);
  
 
-Chapter 3->  Javascript
+### Chapter 3->  Javascript
 
 Entry Point:
   -> Beginning of the code.
