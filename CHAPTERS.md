@@ -1,5 +1,5 @@
-### CHAPTER 1
-**Presentation format:**
+## CHAPTER 1
+### Presentation format:
  ECMAScript is a Standard for scripting languages such as JavaScript, JScript, etc. It is a       trademark scripting language specification. JavaScript is a language based on ECMAScript. A standard for scripting languages like JavaScript, JScript is ECMAScript.
 –>ES5 to ES10 ->It covers imports, classes,constructor,and key principles behind functional programming.
 —>import - The static import statement is used to import read only live bindings which are exported by another module. 
@@ -16,10 +16,12 @@ Why and Where Javascript—> It allows us to add dynamic behavior to the webpage
 *JavaScript is not a programming language. Instead, it is a scripting language because it uses the browser to do the dirty work. 
 *JavaScript runs on the client side of the web, which can be used to design / program how the web pages behave on the occurrence of an event.
 
-VS--->  It is used to develop computer programs, as well as websites, web apps, web services and mobile apps.VS Code helps you be instantly productive with syntax highlighting, bracket-matching, auto-indentation, box-selection, snippets, and more.
+### VS:
+It is used to develop computer programs, as well as websites, web apps, web services and mobile apps.VS Code helps you be instantly productive with syntax highlighting, bracket-matching, auto-indentation, box-selection, snippets, and more.
 npm→ Npm stands for Node Package Manager. It is a package manager for the Node JavaScript platform. Npm is known as the world's largest software registry. Open-source developers all over the world use npm to publish and share their source code.
 
-Nodejs—> Node. js for enterprise apps. It's a light, scalable and open-source language platform which makes it very easy to build apps even at the enterprise level also. Overall it increases the efficiency of the development process as it fills the gap between frontend and backend applications 
+### Nodejs:
+Node. js for enterprise apps. It's a light, scalable and open-source language platform which makes it very easy to build apps even at the enterprise level also. Overall it increases the efficiency of the development process as it fills the gap between frontend and backend applications 
 
 Web Console is a web-based application that enables end-users to manage their data. The console is a self-service programmed that allows us to perform operations, including download, backup, restore, and more for data management.
 
