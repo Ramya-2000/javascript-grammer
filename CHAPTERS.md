@@ -27,20 +27,23 @@ Web Console is a web-based application that enables end-users to manage their da
 
 
 
-**console.dir()** 
+### console.dir()
 The method console.dir() displays an interactive list of the properties of the specified JavaScript object.
 Syntax
 console.dir(object);
-**console.clear()**
+
+### console.clear()
 The console.clear() method clears the console if the environment allows it.
 Syntax
 console.clear();
-**console.error()**
+
+### console.error()
 The console.error() method outputs an error message to the Web console.
 Syntax
 console.error(obj1 [, obj2, ..., objN]);.
 console.error(msg [, subst1, ..., substN]);
-**console.time()**
+
+### console.time()
 The console.time() method starts a timer you can use to track how long an operation takes.
 Syntax
 console.time(label);
