@@ -186,7 +186,8 @@ let n= new Number(45);
 undefined
 ```
    
-### Expression—>Any unit of code that can be evaluated to a value is an expression.
+### Expression:
+ Any unit of code that can be evaluated to a value is an expression.
 —> don’t have to be variable definitions. You can create them
 by simply using some literal values in combination with operators.
  ```
