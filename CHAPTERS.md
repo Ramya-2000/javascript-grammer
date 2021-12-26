@@ -29,13 +29,16 @@ Web Console is a web-based application that enables end-users to manage their da
 
 ### console.dir();
 The method console.dir() displays an interactive list of the properties of the specified JavaScript object.
+```
 Syntax
 console.dir(object);
-
+```
 ### console.clear();
 The console.clear() method clears the console if the environment allows it.
+```
 Syntax
 console.clear();
+```
 
 ### console.error();
 The console.error() method outputs an error message to the Web console.
@@ -73,7 +76,7 @@ copy(object);
 will be executed instantly and simultaneously as the script is being downloaded
 into the browser, without concern for DOM or other media.
 
- AddEventListener—> InBuilt function in Javascript.
+ ### AddEventListener—> InBuilt function in Javascript.
 Event will access—> After completion of DOM document.
     
 event : event can be any valid JavaScript event.Events are used without “on” prefix like use “click” instead of “onclick” or “mousedown” instead of “onmousedown”.
@@ -121,13 +124,14 @@ Some text                      string                              String()
 True                               boolean                         Boolean()
 F f() {}                            function                          Function()
 —>The typeof(value) function can be used to determine the type of the literal value. 
-
+```
 console.log(1+1);
 //using number function
 console.log(Number(1)+Number(2));
 //using number object constructor
 console.log(1+ Number(2)+new Number(4));
 //literal values
+ ```
 
 
 
@@ -185,10 +189,12 @@ undefined
 ### Expression—>Any unit of code that can be evaluated to a value is an expression.
 —> don’t have to be variable definitions. You can create them
 by simply using some literal values in combination with operators.
-—>   let f=function()  {return 1}
+ ```
+ let f=function()  {return 1}
          f();
 Function f() evaluates to value 1, because it returns 1. This is why f() is often
 referred to as a function expression.
        f(); //1
        var y=10; //undefined
        Let f=function(){  
+ ```
