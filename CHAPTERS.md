@@ -1,6 +1,6 @@
-CHAPTER 1
-Presentation format:
- ECMAScript is a Standard for scripting languages such as JavaScript, JScript, etc. It is a       trademark scripting language specification. JavaScript is a language based on ECMAScript. A standard for scripting languages like JavaScript, JScript is ECMAScript.
+# CHAPTER 1
+## Presentation format:
+- ECMAScript is a Standard for scripting languages such as JavaScript, JScript, etc. It is a       trademark scripting language specification. JavaScript is a language based on ECMAScript. A standard for scripting languages like JavaScript, JScript is ECMAScript.
 –>ES5 to ES10 ->It covers imports, classes,constructor,and key principles behind functional programming.
 —>import - The static import statement is used to import read only live bindings which are exported by another module. 
 –>Classes - It is a template for creating objects. They encapsulate data with code to work on that data. Classes in JS are built on prototypes but also have some syntax and semantics that are not shared with ES5 class-like semantics.
@@ -107,14 +107,14 @@ Some text                      string                              String()
 True                               boolean                         Boolean()
 F f() {}                            function                          Function()
 —>The typeof(value) function can be used to determine the type of the literal value. 
-
+```javascript
 console.log(1+1);
 //using number function
 console.log(Number(1)+Number(2));
 //using number object constructor
 console.log(1+ Number(2)+new Number(4));
 //literal values
-
+```
 
 
 Variables-->> are used to store data values. JavaScript uses the keywords var , let and const to declare variables. An equal sign is used to assign values to variables.In JavaScript, there are three different variable types: var , let , and const . Each of these variables have several rules around how they should be used, and have different characteristics.
