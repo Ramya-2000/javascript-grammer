@@ -156,12 +156,12 @@ ravaY hceT skroW
 ### 5.PALINDROME OR NOT 
 
 **ALGORITHM:**
-Step 1. Start the program
-Step 2. Get the input as string from the user. And store it in another variable.
-Step 3. First split that input string then process the reverse function and join.
-Step 4. Compare the both input string and result string.
-Step 5. If both are equal print as Palindrome ,if not print as Not a palindrome
-Step 6. Stop 
+* Step 1. Start the program
+* Step 2. Get the input as string from the user. And store it in another variable.
+* Step 3. First split that input string then process the reverse function and join.
+* Step 4. Compare the both input string and result string.
+* Step 5. If both are equal print as Palindrome ,if not print as Not a palindrome
+* Step 6. Stop 
 
 **PSEUDOCODE:**
 ```
@@ -193,12 +193,12 @@ Not a Palindrome
 
 ### 6.PROGRAM TO EXPLAIN THE  DIFFERENCE  BETWEEN forEach and map?
 **ALGORITHM:**
-Step 1. start the program
-Step 2. Create an array and get the input.
-Step 3. Use the map method with the array and write the event.
-Step 4. Use the forEach to iterate the values.
-Step 5. Print the values
-Step 6. stop
+* Step 1. start the program
+* Step 2. Create an array and get the input.
+* Step 3. Use the map method with the array and write the event.
+* Step 4. Use the forEach to iterate the values.
+* Step 5. Print the values
+* Step 6. stop
 
 **PSEUDOCODE:**
 ```
@@ -224,12 +224,12 @@ Array(4) [ 1, 4, 9, 16 ]
 
 ### 7.GENERATE A RANDOM NUMBER BETWEEN 1 TO 5
 **ALGORITHM:**
-Step 1. Start the program.
-Step 2. Use Math.floor to returns the largest integer less than or equal to a given number
-Step 3. Math.random to get the random value till given number.
-Step 5. Add the number 1 to avoid the 0 values.
-Step 6. Then print the number.
-Step 7. Stop.
+* Step 1. Start the program.
+* Step 2. Use Math.floor to returns the largest integer less than or equal to a given number
+* Step 3. Math.random to get the random value till given number.
+* Step 5. Add the number 1 to avoid the 0 values.
+* Step 6. Then print the number.
+* Step 7. Stop.
 
 **PSEUDOCODE:**
 ```
@@ -249,12 +249,12 @@ console.log(random);
 
 ### 8.REMOVE DUPLICATE FROM THE GIVEN ARRAY [1,2,9,4,5,8,3,5,1,4,5]
 **ALGORITHM:**
-Step 1. Start the program
-Step 2. Create a array with number values.
-Step 3. use SET method
-Step 4. Array is initialized with SET method
-Step 5. Print the values where the duplicates will be removed.
-Step 6. stop the program.
+* Step 1. Start the program
+* Step 2. Create a array with number values.
+* Step 3. use SET method
+* Step 4. Array is initialized with SET method
+* Step 5. Print the values where the duplicates will be removed.
+* Step 6. stop the program.
 
 ***PSEUDOCODE:***
 ```
@@ -278,12 +278,12 @@ Array(7) [ 1, 2, 9, 4, 5, 8, 3 ]
 
 ### 9.Write a program to calculate the sum of the first 10 natural numbers.
 **ALGORITHM:**
-Step 1. start the program.
-Step 2. Declare two varibale num= 0 , i = 1.
-Step 3. Use for loop to iterate the values.
-Step 4. Add the iterated values inside the for.
-Step 5. Print the value and call the function.
-Step 6. Stop.
+* Step 1. start the program.
+* Step 2. Declare two varibale num= 0 , i = 1.
+* Step 3. Use for loop to iterate the values.
+* Step 4. Add the iterated values inside the for.
+* Step 5. Print the value and call the function.
+* Step 6. Stop.
 
 **PSEUDOCODE:**
 ```
@@ -315,12 +315,12 @@ console.log(sumOfN(10));
 
 ### 10.Write a program to print the sum of the even and odd numbers for a given number?(100)
 **ALGORITHM:**
-Step 1. start the program
-Step 2. Declare three variables n,oddSum and evenSum.
-Step 3. Iterate for loop till 100 times.
-Step 4. if(i % 2 == 0) then print even numbers
-Step 5. else print odd numbers.
-Step 6. Stop.
+* Step 1. start the program
+* Step 2. Declare three variables n,oddSum and evenSum.
+* Step 3. Iterate for loop till 100 times.
+* Step 4. if(i % 2 == 0) then print even numbers
+* Step 5. else print odd numbers.
+* Step 6. Stop.
 
 **PSEUDOCODE:**
 ```
