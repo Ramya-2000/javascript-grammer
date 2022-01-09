@@ -1,13 +1,13 @@
 ### 1.PRIME NUMBER
 
 **ALGORITHM:**
-Step 1.Start the program.
-step 2 Write a function with parameter and assign a variable.
-Step 3. Check the number is n<2 means return “not a prime”.
-Step 4. if the condition fails for loop will be executed 
-Step 5. Check the condition n%i===0.If true means it return not a prime number.
-Step 6. If condition fails it will return as prime number.
-Step 7. Stop the program.
+* Step 1.Start the program.
+* step 2 Write a function with parameter and assign a variable.
+* Step 3. Check the number is n<2 means return “not a prime”.
+* Step 4. if the condition fails for loop will be executed 
+* Step 5. Check the condition n%i===0.If true means it return not a prime number.
+* Step 6. If condition fails it will return as prime number.
+* Step 7. Stop the program.
 
 **PSEUDOCODE:**
 ```
@@ -49,11 +49,11 @@ console.log(isPrime(29));
  == is used for comparison between two variables irrespective of the datatype of variable. === is used for comparison between two variables but this will check strict type, which means it will check datatype and compare two values.
 
 **ALGORITHM:**
-Step 1. Start the program.
-Step 2. Declare  a variables and assign a value.
-Step 3. Then compare the values using == operator and also datatype using ===.
-Step 4. Check the result and  print either true or false.
-Step 5. stop
+* Step 1. Start the program.
+* Step 2. Declare  a variables and assign a value.
+* Step 3. Then compare the values using == operator and also datatype using ===.
+* Step 4. Check the result and  print either true or false.
+* Step 5. stop
 
 **PSEUDOCODE:**
 ```
@@ -92,11 +92,11 @@ false
 ### 3.REVERSE A STRING 
 
 **ALGORITHM**
-STEP 1: Get an input from the user or take an example input.
-STEP 2: Split the given input into a single letter using split(‘’) function
-STEP 3:  Reverse the splitted word.
-STEP 4:  Join the reversed word using join(‘’) function.
-STEP 5: Stop the program.   
+* STEP 1: Get an input from the user or take an example input.
+* STEP 2: Split the given input into a single letter using split(‘’) function
+* STEP 3:  Reverse the splitted word.
+* STEP 4:  Join the reversed word using join(‘’) function.
+* STEP 5: Stop the program.   
 
 **PSEUDOCODE**
 ```
@@ -122,13 +122,13 @@ rotcurtsnoc
 ### 4.REVERSE WORDS IN A SENTENCE
 
 **ALGORITHM:**
-step 1. Start the program.
-step 2. create a function with parameter of reverse.
-Step 2. Use the reverse() method to reverse the new created array
-Step 3. Use the join(" ") method to join all elements of the array into a string
-Step 4. Return the reversed string
-Step 5. Call the string function with string parameters
-Step 6. Stop.
+* step 1. Start the program.
+* step 2. create a function with parameter of reverse.
+* Step 2. Use the reverse() method to reverse the new created array
+* Step 3. Use the join(" ") method to join all elements of the array into a string
+* Step 4. Return the reversed string
+* Step 5. Call the string function with string parameters
+* Step 6. Stop.
 
 **PSEUDOCODE:**
 ```
@@ -573,11 +573,6 @@ Object { 1: 1, 2: 1, 3: 1 }
 3: 1
 
 ### 16.Write a program in Javascript to display the pattern like right angle triangle using an asterisk.The pattern like :
-*
-**
-***
-****
-*****
 **ALGORITHM:**
 Step 1. Start the program.
 Step 2. Declare variable with 5 value and make another one with empty string.
@@ -615,10 +610,6 @@ console.log(string);
 
 ### 17.Write a program in Javascript to make such a pattern like right angle triangle with number increased by 1
 
-1
-2 3
-4 5 6
-7 8 9 10
 **ALGORITHM:**
 Step 1. Start the program.
 Step 2. Declare variable with 4 value and make another one with empty string.
@@ -663,10 +654,6 @@ console.log(string);
 
 ### 18.Write a program in Javascript to make such a pattern like a pyramid with numbers increased by 1
 
-   1
-  2 3
- 4 5 6
-7 8 9 10
 **ALGORITHM:**
 Step 1. Start the program.
 Step 2. Declare count variable at public with number 1 and a empty string.
@@ -718,16 +705,6 @@ console.log(num);
 
 
 ### 19.Write a program in Javascript to display the pattern like a diamond
-
-    *
-   ***
-  *****
- *******
-*********
- *******
-  *****
-   *** 
-    *
 
 **ALGORITHM:**
 Step 1. Start the program.
