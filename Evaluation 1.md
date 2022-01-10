@@ -608,6 +608,13 @@ for (let i = 1; i <= n; i++) {
 console.log(string);
 ```
 
+OUTPUT:
+*
+**
+***
+****
+*****
+
 ### 17.Write a program in Javascript to make such a pattern like right angle triangle with number increased by 1
 
 **ALGORITHM:**
@@ -651,6 +658,11 @@ for (let i = 1; i <= n; i++) {
 }
 console.log(string);
 ```
+OUTPUT:
+1
+2 3
+4 5 6
+7 8 9 10
 
 ### 18.Write a program in Javascript to make such a pattern like a pyramid with numbers increased by 1
 
@@ -702,6 +714,11 @@ for(var i=1;i<=rows;i++)
 }
 console.log(num);
 ```
+OUTPUT:
+   1
+  2 3
+ 4 5 6
+7 8 9 10
 
 
 ### 19.Write a program in Javascript to display the pattern like a diamond
@@ -768,3 +785,14 @@ for (let i = 1; i <= n - 1; i++) {
   }
   console.log(string);
   ```
+OUTPUT:
+
+    *
+   ***
+  *****
+ *******
+*********
+ *******
+  *****
+   *** 
+    *
