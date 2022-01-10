@@ -359,12 +359,12 @@ console.log(oddSum, evenSum);
 ### 11.Write a program to merge two arrays?
 
 **ALGORITHM:**
-Step 1. Start the program.
-Step 2. Declare two arrays arr1,arr2.
-Step 3. creat the new array.
-Step 4. Concatenate the arr1 and arr2.
-Step 5. Print the new array.
-Step 6. Stop.
+* Step 1. Start the program.
+* Step 2. Declare two arrays arr1,arr2.
+* Step 3. creat the new array.
+* Step 4. Concatenate the arr1 and arr2.
+* Step 5. Print the new array.
+* Step 6. Stop.
 
 **PSEUDOCODE:**
 ```
@@ -391,12 +391,12 @@ Array(10) [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 ]
 ### 12.Remove duplicate from an array of an object by id and name?
 
 **ALGORITHM:**
-Step 1. Start the program.
-Step 2. Create an array with values.
-Step 3: Use the map function and .map will iterate through all items in array.
-Step 3. Use filter function which will create new array without duplicates.
-Step 4. Print the result which is filtered.
-Step 5: Stop the program.
+* Step 1. Start the program.
+* Step 2. Create an array with values.
+* Step 3: Use the map function and .map will iterate through all items in array.
+* Step 3. Use filter function which will create new array without duplicates.
+* Step 4. Print the result which is filtered.
+* Step 5: Stop the program.
 
 **PSEUDOCODE:**
 ```
@@ -439,11 +439,11 @@ length: 4
 ### 13.Compare two objects, If all properties are equal return true or return false?
 
 **ALGORITHM:**
-Step 1: Start the program.
-Step 2: Declare the two arrays and assign the values.
-Step 3: Check if the entries in both the arrays are same or not.
-Step 4: If same print true,if not print false.
-Step 5: Stop the program.
+* Step 1: Start the program.
+* Step 2: Declare the two arrays and assign the values.
+* Step 3: Check if the entries in both the arrays are same or not.
+* Step 4: If same print true,if not print false.
+* Step 5: Stop the program.
 
 **PSEUDOCODE:**
 ```
@@ -474,10 +474,10 @@ true
 
 ### 14.Take a multidimensional array and flat the array?[1,4,2,3,[10,20,20], [100,500,700,600],[2000,1000]]
 **ALGORITHM:**
-Step 1. Start the program.
-Step 2. Create a muiltidimentional array.
-Step 3. Use multi.flat to flat the array to single array.
-Step 4. Print the Array.
+* Step 1. Start the program.
+* Step 2. Create a muiltidimentional array.
+* Step 3. Use multi.flat to flat the array to single array.
+* Step 4. Print the Array.
 
 **PSEUDOCODE:**
 ```
@@ -532,12 +532,12 @@ length: 13
 
 ### 15.Group by the id of the following array of objects using the Array.reduce method?[{id: 1, name: ‘edison’ }, {id: 2, name: ‘Annand’ }, {id: 3, name: ‘Vasnath’}] 
 **ALGORITHM:**
-Step 1. Start the program.
-Step 2. Declare the array of objects.
-Step 3. Use the reduce function to iterate previous value with current value.
-Step 4. Check the both value and add count into previous value or make it one
-Step 5. Print the value.
-Step 6. Stop the program.
+* Step 1. Start the program.
+* Step 2. Declare the array of objects.
+* Step 3. Use the reduce function to iterate previous value with current value.
+* Step 4. Check the both value and add count into previous value or make it one
+* Step 5. Print the value.
+* Step 6. Stop the program.
 
 **PSEUDOCODE:**
 ```
@@ -574,12 +574,12 @@ Object { 1: 1, 2: 1, 3: 1 }
 
 ### 16.Write a program in Javascript to display the pattern like right angle triangle using an asterisk.The pattern like :
 **ALGORITHM:**
-Step 1. Start the program.
-Step 2. Declare variable with 5 value and make another one with empty string.
-Step 3. Run for loop 5 times then run the nested for loop i times.
-Step 4. Add the "*" in nested loop and add /n at the end of nested loop.
-Step 5. Then print the string values.
-Step 6. Stop the program.
+* Step 1. Start the program.
+* Step 2. Declare variable with 5 value and make another one with empty string.
+* Step 3. Run for loop 5 times then run the nested for loop i times.
+* Step 4. Add the "*" in nested loop and add /n at the end of nested loop.
+* Step 5. Then print the string values.
+* Step 6. Stop the program.
 
 **PSEUDOCODE:** 
 ```
@@ -611,14 +611,14 @@ console.log(string);
 ### 17.Write a program in Javascript to make such a pattern like right angle triangle with number increased by 1
 
 **ALGORITHM:**
-Step 1. Start the program.
-Step 2. Declare variable with 4 value and make another one with empty string.
-Step 3. Declare count variable at public with number 1.
-Step 4. Run for loop 4 times then run the nested for loop i times.
-Step 5. Add the count value to a variable as string and increment it.
-Step 6. Add the count in nested loop and add /n at the end of nested loop.
-Step 7. Print the string variable.
-Step 8. Stop the program.
+* Step 1. Start the program.
+* Step 2. Declare variable with 4 value and make another one with empty string.
+* Step 3. Declare count variable at public with number 1.
+* Step 4. Run for loop 4 times then run the nested for loop i times.
+* Step 5. Add the count value to a variable as string and increment it.
+* Step 6. Add the count in nested loop and add /n at the end of nested loop.
+* Step 7. Print the string variable.
+* Step 8. Stop the program.
 
 **PSEUDOCODE:**
 ```
@@ -655,13 +655,13 @@ console.log(string);
 ### 18.Write a program in Javascript to make such a pattern like a pyramid with numbers increased by 1
 
 **ALGORITHM:**
-Step 1. Start the program.
-Step 2. Declare count variable at public with number 1 and a empty string.
-Step 3. Run for loop 4 times then run the nested for loop 5 - i times for print spaces.
-Step 4. Then create the another loop for printing the values.
-Step 5. Add the count value to a variable as string and increment count.
-Step 6. Print the result.
-Step 7. Stop the program.
+* Step 1. Start the program.
+* Step 2. Declare count variable at public with number 1 and a empty string.
+* Step 3. Run for loop 4 times then run the nested for loop 5 - i times for print spaces.
+* Step 4. Then create the another loop for printing the values.
+* Step 5. Add the count value to a variable as string and increment count.
+* Step 6. Print the result.
+* Step 7. Stop the program.
 
 **PSEUDOCODE:**
 ```
@@ -707,14 +707,14 @@ console.log(num);
 ### 19.Write a program in Javascript to display the pattern like a diamond
 
 **ALGORITHM:**
-Step 1. Start the program.
-Step 2. Declare n variable at public with number 1 and a empty string.
-Step 3. Run for loop nth times do spaces then run the nested for loop 2*i-1 times for print stars.
-Step 4. Add /n at the end of nested loop.
-Step 5. Again run loops to print reverse prymid.
-Step 6. for loop nth - 1 times do spaces then run the nested for loop 2*(n-1) times for print stars.
-Step 7. Add /n at the end of nested loop.
-Step 8. Stop the program.
+* Step 1. Start the program.
+* Step 2. Declare n variable at public with number 1 and a empty string.
+* Step 3. Run for loop nth times do spaces then run the nested for loop 2*i-1 times for print stars.
+* Step 4. Add /n at the end of nested loop.
+* Step 5. Again run loops to print reverse prymid.
+* Step 6. for loop nth - 1 times do spaces then run the nested for loop 2*(n-1) times for print stars.
+* Step 7. Add /n at the end of nested loop.
+* Step 8. Stop the program.
 
 **PSEUDOCODE:**
 ```
