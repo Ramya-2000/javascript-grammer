@@ -120,10 +120,12 @@ for(var i=0;i<a.length;i++){
 }
 ```
 **OUTPUT**
+```js
 2
 4
 5
 7
+```
 
 ### 3.Explain about function Anatomy, Anonymous function and Assigning function to a variable with an example? 
 **ANONYMOUS**
@@ -149,7 +151,9 @@ setTimeout(function () {
 }, 2000);
 ```
 **OUTPUT**
+```js
 Welcome to javascript
+```
 
 **ASSIGNING FUNCTION TO VARIABLE**
 * Anonymous functions can be assigned to a variable, making them named function again.
@@ -171,7 +175,9 @@ let s=function(a,b){
   }
   console.log(s(4,5));
 **OUTPUT**
+```js
 20
+```
 
 **ANATOMY**
 * A function is a sequence of instructions within a larger program.
@@ -198,7 +204,9 @@ function add(num1, num2) {
 }add(3,4);
 ```
 **OUTPUT**
+```js
 7
+```
 
 ### 4.Show an example ofSafegrounding function parameters?
 **ALGORITHM**
@@ -235,7 +243,9 @@ var obj ={};
 java(obj);
 ```
 OUTPUT:
+```js
 Its not a function
+```
 
 ### 5.Explain `this` keyword with an example?
 **Algorithm**
@@ -272,6 +282,7 @@ const channel={
 channel.Showvideos();
 ```
 **OUTPUT**
+```js
 Array [ "tamil", "english" ]
 ​
 0: "tamil"
@@ -279,6 +290,7 @@ Array [ "tamil", "english" ]
 1: "english"
 ​
 length: 2
+```
 
 ### 6.How ‘this’ inside the function and class?
 **'this' INSIDE FUNCTION**
@@ -315,7 +327,9 @@ channel1.lastName = "tutorial";
 console.log(channel1.firstName + " " + channel1.lastName);
 ```
 **OUTPUT**
+```js
 javascript tutorial
+```
 
 **'this' INSIDE CLASS**
 **ALGORITHM**
@@ -348,7 +362,9 @@ class Car {
   console.log(myCar.name + " " + myCar.year);
 
   **OUTPUT**
+  ```js
   Ford 2014
+  ```
 
   ### 7.Difference between map, reduce and filter methods? With an example
   **MAP**
@@ -375,7 +391,9 @@ const returnValue = myArray.map((element) => {
 })
 console.log(returnValue);
 **OUTPUT**
+```js
 Array(4) [ 1, 4, 9, 16 ]
+```
 
 **REDUCE**
 **ALGORITHM**
@@ -400,7 +418,9 @@ PRINT newArray1
  console.log(newArray1);//reduce
  ```
 **OUTPUT**
+```js
  10
+ ```
 
  **FILTER**
  **ALGORITHM**
@@ -426,10 +446,58 @@ const result = words.filter(word => word.length <=5);
 console.log(result);
 
 **OUTPUT**
+```js
 Array(4) [ "java", "elite", "yavar", "value" ]
+```
 
 ### 8.Count Total number of zeros from 1 up to 50
 **ALGORITHM**
+**PSEUDOCODE**
+**CODE**
+**OUTPUT**
+
+
+### 9.The following array of numbers show the missing number? ([1,2,3,5,6])
+**ALGORITHM**
+* Step 1:Start the program.
+* Step 2:Create an array and assign the value.
+* Step 3:Iterate the loop upto length of the array.
+* Step 4:Put the condition as arr[i-1]!==i and return i.
+* Step 5:Print the Missing NUmber.
+
+**PSEUDOCODE**
+```
+BEGIN
+SET findMissingNumber = (arr) => {
+    FOR (let i = 1; i <= arr.length; i++) 
+      IF (arr[i - 1] !== i) 
+        RETURN  i
+      ENDIF
+    ENDFOR
+  SET arr = [1, 2, 3,5,6];
+  RETURN findMissingNumber(arr)
+  END
+  ```
+
+  **CODE**
+  ```js
+  const findMissingNumber = (arr) => {
+    for (let i = 1; i <= arr.length; i++) {
+      if (arr[i - 1] !== i) {
+        return i;
+      }
+    }
+  }
+  const arr = [1, 2, 3,5];
+  console.log(findMissingNumber(arr));
+  ```
+  **OUTPUT**
+  ```js
+  4
+  ```
+
+  ### 10.Write a program for calculating age using Date of birth? (1990)
+  **ALGORITHM**
 * Step 1:Start the program.
 * Step 2:Get the today date,year and birthday date and year.
 * Step 3:Subtract the today year from the birthyear.
@@ -471,53 +539,10 @@ const getAge = (birthDateString) => {
 console.log(getAge('2000-03-12'));
 ```
 **OUTPUT**
+```js
 22
-
-### 9.The following array of numbers show the missing number? ([1,2,3,5,6])
-**ALGORITHM**
-* Step 1:Start the program.
-* Step 2:Create an array and assign the value.
-* Step 3:Iterate the loop upto length of the array.
-* Step 4:Put the condition as arr[i-1]!==i and return i.
-* Step 5:Print the Missing NUmber.
-
-**PSEUDOCODE**
 ```
-BEGIN
-SET findMissingNumber = (arr) => {
-    FOR (let i = 1; i <= arr.length; i++) 
-      IF (arr[i - 1] !== i) 
-        RETURN  i
-      ENDIF
-    ENDFOR
-  SET arr = [1, 2, 3,5,6];
-  RETURN findMissingNumber(arr)
-  END
-  ```
-
-  **CODE**
-  ```js
-  const findMissingNumber = (arr) => {
-    for (let i = 1; i <= arr.length; i++) {
-      if (arr[i - 1] !== i) {
-        return i;
-      }
-    }
-  }
-  const arr = [1, 2, 3,5];
-  console.log(findMissingNumber(arr));
-  ```
-  **OUTPUT**
-  4
-
-  ### 10.Write a program for calculating age using Date of birth? (1990)
-  **ALGORITHM**
-  **PSEUDOCODE**
-  **CODE**
-  **OUTPUT** 
   
-
-
   ### 11.In the Javascript function, what are the differences between call by value and reference?
   **Call by value**
   **ALGORITHM**
@@ -548,9 +573,10 @@ SET findMissingNumber = (arr) => {
     console.log(b);
 ```
 **OUTPUT**
+```js
 3
 5
-
+```
 **Call by reference**
 **Algorithm**
 * Step 1:Start the program.
@@ -581,9 +607,10 @@ PRINT d
     console.log(d);
 ```
 **OUTPUT**
+```js
 Object { greeting: "Welcome to javascript" }
 Object { greeting: "Welcome to javascript" }
-
+```
 ### 12.What is Arity in Javascript? Explain with a real time example.
 **ALGORITHM**
 * Step 1:Start the program.
@@ -612,7 +639,9 @@ function sum(a,b){
 log(functionArity(sum));
 ```
 **OUTPUT**
+```js
 2
+```
 
 ### 13.What is Currying in Javascript? Explain with a real time example.
 **ALGORITHM**
@@ -643,7 +672,9 @@ function multiply(a) {
 }console.log(multiply(1)(2)(3))
 ```
 **OUTPUT**
+```js
 6
+```
 
 ### 14.What is ES6?
 * JavaScript ES6 (also known as ECMAScript 2015 or ECMAScript 6) is the newer version of JavaScript that was introduced in 2015. 
