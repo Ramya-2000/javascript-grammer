@@ -1,3 +1,4 @@
+//Anonymous function
 setTimeout(function () {
     console.log("Welcome to javascript");
 }, 2000);

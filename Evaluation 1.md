@@ -16,7 +16,7 @@ BEGIN
      IF (n<2)
      RETURN number is not a prime
     FOR (let i=2;i<n;i++)
-         IF (n%i===0){
+         IF (n%i===0)
          RETURN number is not a prime number
          ENDIF
     ENDFOR
