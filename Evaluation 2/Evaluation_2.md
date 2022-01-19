@@ -654,7 +654,7 @@ log(functionArity(sum));
 **PSEUDOCODE**
 ```
 BEGIN
-FUNCTION MULTIPLY(a) {
+FUNCTION MULTIPLY(a) { 
     RETURN (b) => {
         RETURN(c) => {
             RETURN a * b * c

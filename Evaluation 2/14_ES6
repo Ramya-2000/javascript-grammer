@@ -3,7 +3,7 @@
 ECMAScript is the standard that JavaScript programming language uses. 
 ECMAScript provides the specification on how JavaScript programming language should work.
 
-ES6 introduced several key features like const, let, arrow functions, template literals, default parameters, and a lot more. 
+* ES6 introduced several key features like const, let, arrow functions, template literals, default parameters, and a lot more. 
 Let’s take a look at them one by one.Before ES6 we mainly made use of the var keyword whenever we wanted to declare a variable. 
 But it had some serious issues, also it was not developers’ favorite so in the ES6 version, we were introduced to const and let keywords which allows us to store variables. 
 They both have their own way of storing variables.

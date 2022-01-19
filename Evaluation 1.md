@@ -221,6 +221,24 @@ console.log(returnValue);
 **OUTPUT:**
 Array(4) [ 1, 4, 9, 16 ]
 
+**Foreach**
+
+**Code**
+```js
+let myArray = [1, 2, 3, 4];
+  
+const returnValue = myArray.forEach((element) => {
+    return element * element;
+});
+console.log(returnValue);
+```
+
+**output**
+```js
+undefined 
+undefined
+```
+
 
 ### 7.GENERATE A RANDOM NUMBER BETWEEN 1 TO 5
 **ALGORITHM:**
