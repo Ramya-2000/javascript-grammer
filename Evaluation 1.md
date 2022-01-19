@@ -446,6 +446,7 @@ console.log(filtered)
 ```
 
 **OUTPUT:**
+```js
 Array(4) [ {…}, {…}, {…}, {…} ]
 ​
 0: Object { id: 1, name: "Stephen covey" }
@@ -457,6 +458,7 @@ Array(4) [ {…}, {…}, {…}, {…} ]
 3: Object { id: 5, name: "James clear" }
 ​
 length: 4
+```
 
 ### 13.Compare two objects, If all properties are equal return true or return false?
 
