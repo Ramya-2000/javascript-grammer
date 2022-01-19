@@ -359,7 +359,7 @@ PRINT RESULT
 
 ***CODE:***
 ```js
-ar n = 6;
+ar n = 100;
 var oddSum = 0;
 var evenSum = 0;
 var i = 1; // initialization
@@ -375,7 +375,7 @@ console.log(oddSum, evenSum);
 ```
 
 **OUTPUT:**
-9 12 
+2500  2550
 
 
 ### 11.Write a program to merge two arrays?
