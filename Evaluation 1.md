@@ -375,7 +375,7 @@ console.log(oddSum, evenSum);
 ```
 
 **OUTPUT:**
-9 12 
+2500  2550
 
 
 ### 11.Write a program to merge two arrays?
