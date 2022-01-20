@@ -101,23 +101,26 @@ false
 **PSEUDOCODE**
 ```
 BEGIN
-   SET str=”example string”
-    SET ar=str.split(“ “)
-     SET ar.reverse().join(‘ ‘)   
- RETURN ar
-PRINT result
+   
+
+
+
 END
 ```
 
 ***CODE:***
 ```js
-var str = "constructor";
-var ar=str.split('')
-console.log(ar.reverse().join(''));
+
+
+
+
 ```
 
 **OUTPUT:**
-rotcurtsnoc
+
+
+
+
 
 ### 4.REVERSE WORDS IN A SENTENCE
 
