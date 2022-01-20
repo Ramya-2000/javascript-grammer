@@ -40,7 +40,9 @@ function isPrime(n){
 console.log(isPrime(29));
 ```
 **OUTPUT:**
+```js
 29 is a prime number
+```
 
 
 
@@ -72,6 +74,7 @@ END
 
 ***CODE:***
 ```js
+"use strict"
 var one = 1;
 var one_again = 1;
 var one_str= "1";  
@@ -83,10 +86,12 @@ console.log(one === one_str); // false
 ```
 
 **OUTPUT:**
+```js
 true 
 true 
 true
 false
+```
     
 
 ### 3.REVERSE A STRING 
@@ -114,9 +119,11 @@ END
 
 
 
+
 ```
 
 **OUTPUT:**
+
 
 
 
@@ -146,6 +153,7 @@ BEGIN
 
 ***CODE:***
 ```js
+"use strict"
 var str = "Yavar Tech Works";
 function rev(str){
     var arr = str.split(" ");
@@ -158,7 +166,9 @@ console.log(rev(str));
 ```
 
 **OUTPUT:**
+```js
 ravaY hceT skroW
+```
 
 ### 5.PALINDROME OR NOT 
 
@@ -184,6 +194,7 @@ END
 
 ***CODE:***
 ```js
+"use strict"
 var str = "Technologies";
 var arr=str.split('')
 if(arr.reverse().join('') === str){
@@ -195,7 +206,9 @@ else{
 ```
 
 **OUTPUT:**
+```js
 Not a Palindrome
+```
 
 
 ### 6.PROGRAM TO EXPLAIN THE  DIFFERENCE  BETWEEN forEach and map?
@@ -218,6 +231,7 @@ END
 
 ***CODE:***
 ```js
+"use strict"
 let myArray = [1, 2, 3, 4];  
 const returnValue = myArray.map((element) => {
     return element * element;
@@ -226,12 +240,15 @@ console.log(returnValue);
 ```
 
 **OUTPUT:**
+```js
 Array(4) [ 1, 4, 9, 16 ]
+```
 
 **Foreach**
 
 **Code**
 ```js
+"use strict"
 let myArray = [1, 2, 3, 4];
   
 const returnValue = myArray.forEach((element) => {
@@ -265,12 +282,15 @@ PRINT (Math.floor((Math.random() * 5) + 1));
 
 ***CODE:***
 ```js
+"use strict"
 var random=Math.floor(Math.random() * 5) + 1;
 console.log(random);
 ```
 
 **OUTPUT:**
+```js
 3
+```
 
 ### 8.REMOVE DUPLICATE FROM THE GIVEN ARRAY [1,2,9,4,5,8,3,5,1,4,5]
 **ALGORITHM:**
@@ -293,13 +313,16 @@ END
 
 ***CODE:***
 ```js
+"use strict"
 let Arr =([1,2,9,4,5,8,3,5,1,4,5])
 let uniqueArr= [...new Set(Arr)];
 console.log(uniqueArr);
 ```
 
 **OUTPUT:**
+```js
 Array(7) [ 1, 2, 9, 4, 5, 8, 3 ]
+```
 
 ### 9.Write a program to calculate the sum of the first 10 natural numbers.
 **ALGORITHM:**
@@ -325,6 +348,7 @@ END
 
 ***CODE:***
 ```js
+"use strict"
 function sumOfN(n){
     var num =0;
     for(let i = 1; i<=n ;i++){
@@ -336,7 +360,9 @@ console.log(sumOfN(10));
 ```
 
 **OUTPUT:**
+```js
 55
+```
 
 ### 10.Write a program to print the sum of the even and odd numbers for a given number?(100)
 **ALGORITHM:**
@@ -362,6 +388,7 @@ PRINT RESULT
 
 ***CODE:***
 ```js
+"use strict"
 ar n = 100;
 var oddSum = 0;
 var evenSum = 0;
@@ -378,7 +405,9 @@ console.log(oddSum, evenSum);
 ```
 
 **OUTPUT:**
+```js
 2500  2550
+```
 
 
 ### 11.Write a program to merge two arrays?
@@ -404,6 +433,7 @@ END
 
 ***CODE***
 ```jS
+"use strict"
 var arr1 = [1,2,3,4,5];
 var arr2 = [6,7,8,9,10];
 const newarr = arr1.concat(arr2); 
@@ -411,7 +441,9 @@ console.log(newarr);
 ```
 
 **OUTPUT:**
+```js
 Array(10) [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 ]
+```
 
 ### 12.Remove duplicate from an array of an object by id and name?
 
@@ -436,6 +468,7 @@ END
 
 ***CODE:***
 ```javascript
+"use strict"
 var arr = [
     {id: 1, name: 'Stephen covey'},
     {id: 2, name: 'Robin Sharma' }, 
@@ -487,6 +520,7 @@ END
 
 ***CODE***
 ```javascript
+"use strict"
 const arr1=[{id: 1, name: 'edison'}, {id: 1, name: 'edison'}];
  const arr2=[{id: 1, name: 'edison'},{id: 2, name: 'edison'}];
 
@@ -497,7 +531,9 @@ console.log("true")
 }
 ```
 **OUTPUT:**
+```js
 true
+```
 
 ### 14.Take a multidimensional array and flat the array?[1,4,2,3,[10,20,20], [100,500,700,600],[2000,1000]]
 **ALGORITHM:**
@@ -516,6 +552,7 @@ END
 
 ***CODE***
 ```javascript
+"use strict"
 let arr = [1,4,2,3,[10,20,20], [100,500,700,600],
 [2000,1000]]
 console.log(arr.flat(3));
@@ -526,6 +563,7 @@ let arr = [1,4,2,3,[10,20,20], [100,500,700,600],
 console.log(arr.flat(Infinity));
 ```
 **OUTPUT:**
+```js
 Array(13) [ 1, 4, 2, 3, 10, 20, 20, 100, 500, 700, … ]
 ​
 0: 1
@@ -555,7 +593,7 @@ Array(13) [ 1, 4, 2, 3, 10, 20, 20, 100, 500, 700, … ]
 12: 1000
 ​
 length: 13
-​
+```
 
 ### 15.Group by the id of the following array of objects using the Array.reduce method?[{id: 1, name: ‘edison’ }, {id: 2, name: ‘Annand’ }, {id: 3, name: ‘Vasnath’}] 
 **ALGORITHM:**
@@ -582,6 +620,7 @@ END
 ```
 ***CODE***
 ```js
+"use strict"
 var arr=[{id: 1, name: 'edison'}, {id: 2, name: 'Annand'}, {id: 3, name: 'Vasnath'}]
 let groupbyid = arr.reduce((r, index) => {
     r[index.id]=index[r.id]+1 || 1
@@ -590,6 +629,7 @@ let groupbyid = arr.reduce((r, index) => {
     console.log(groupbyid);
 ```
 **OUTPUT:**
+```js
 Object { 1: 1, 2: 1, 3: 1 }
 ​
 1: 1
@@ -597,6 +637,7 @@ Object { 1: 1, 2: 1, 3: 1 }
 2: 1
 ​
 3: 1
+```
 
 ### 16.Write a program in Javascript to display the pattern like right angle triangle using an asterisk.The pattern like :
 **ALGORITHM:**
@@ -623,6 +664,7 @@ PRINT (string);
 
 ***CODE***
 ```js
+"use strict"
 let n = 5;
 let string = "";
 for (let i = 1; i <= n; i++) {
@@ -635,11 +677,13 @@ console.log(string);
 ```
 
 OUTPUT:
+```js
 *
 **
 ***
 ****
 *****
+```
 
 ### 17.Write a program in Javascript to make such a pattern like right angle triangle with number increased by 1
 
@@ -672,6 +716,7 @@ END
 
 ***CODE***
 ```js
+"use strict"
 let n = 4;
 let string = "";
 let count=1;
@@ -685,10 +730,12 @@ for (let i = 1; i <= n; i++) {
 console.log(string);
 ```
 OUTPUT:
+```js
 1
 2 3
 4 5 6
 7 8 9 10
+```
 
 ### 18.Write a program in Javascript to make such a pattern like a pyramid with numbers increased by 1
 
@@ -721,6 +768,7 @@ PRINT number
 
 ***CODE***
 ```js
+"use strict"
 var rows=4;
 let num="";
 let count=1;
@@ -741,10 +789,12 @@ for(var i=1;i<=rows;i++)
 console.log(num);
 ```
 OUTPUT:
+```js
    1
   2 3
  4 5 6
 7 8 9 10
+```
 
 
 ### 19.Write a program in Javascript to display the pattern like a diamond
@@ -783,6 +833,7 @@ END
 
 ***CODE***
 ```js
+"use strict"
 var n=5;
 let string= "";
 for(var i=1;i<=n;i++)
@@ -812,6 +863,7 @@ for (let i = 1; i <= n - 1; i++) {
   console.log(string);
   ```
 OUTPUT:
+```js
 
     *
    ***
@@ -822,3 +874,4 @@ OUTPUT:
   *****
    *** 
     *
+ ```
