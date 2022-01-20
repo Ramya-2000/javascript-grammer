@@ -97,117 +97,137 @@ false
 ### 3.REVERSE A STRING 
 
 **ALGORITHM**
-* STEP 1: Get an input from the user or take an example input.
-* STEP 2: Split the given input into a single letter using split(‘’) function
-* STEP 3:  Reverse the splitted word.
-* STEP 4:  Join the reversed word using join(‘’) function.
+* STEP 1:Create a function with name as reverseString and pass str as parameter.
+* STEP 2:Then Create newString as empty and store the reversed string.
+* STEP 3:Iterate th for loop until length of string.
+* STEP 4:Return the newString and call the function and pass argument.
 * STEP 5: Stop the program.   
 
 **PSEUDOCODE**
 ```
 BEGIN
-   
-
-
-
+FUNCTION REVERSESTRING(str)
+    SET newString = ""
+    FOR(var i = str.length - 1; i >= 0; i--) 
+        newString += str[i]
+    RETURN newString
+REVERSESTRING("Constructor") 
 END
 ```
-
 ***CODE:***
 ```js
-
-
-
-
-
+function reverseString(str) {
+    var newString = "";
+    for (var i = str.length - 1; i >= 0; i--) {
+        newString += str[i];
+    }
+    return newString;
+}
+reverseString("Constructor");
 ```
-
 **OUTPUT:**
-
-
-
-
-
+```js
+"rotcurtsnoC"
+```
 
 ### 4.REVERSE WORDS IN A SENTENCE
 
 **ALGORITHM:**
 * step 1. Start the program.
-* step 2. create a function with parameter of reverse.
-* Step 2. Use the reverse() method to reverse the new created array
-* Step 3. Use the join(" ") method to join all elements of the array into a string
-* Step 4. Return the reversed string
-* Step 5. Call the string function with string parameters
-* Step 6. Stop.
+* step 2. Create function with name as reverse and word as parameter.
+* Step 3. split the word,reverse the word and join the word.
+* Step 4. Return the word and give the sentence.
+* Step 5. call the function and print the result.
 
 **PSEUDOCODE:**
 ```
 BEGIN
-  FUNCTION reverse(str)
-    SET str.split(" ")
-    SET reverse=arr.map(i=>{  return i.split(‘’).reverse().join(“); })
-   RETURN join(“ “);
-  END FUNCTION
-  PRINT result
+FUNCTION REVERSE(word) 
+    word = word.split(" ").reverse().join(" ")
+    RETURN word
+word = 'Yavar Tech Works'
+RETURN(reverse(word))
 ```
 
 ***CODE:***
 ```js
 "use strict"
-var str = "Yavar Tech Works";
-function rev(str){
-    var arr = str.split(" ");
-    var reverse = arr.map(i=>{
-        return i.split('').reverse().join("");
-        });
-    return reverse.join(" ");
+function reverse (word) {
+    word = word.split(" ").reverse().join(" ")
+    return word
+
 }
-console.log(rev(str));
+word = 'Yavar Tech Works'
+console.log(reverse(word));
 ```
 
 **OUTPUT:**
 ```js
-ravaY hceT skroW
+Works Tech Yavar
 ```
 
 ### 5.PALINDROME OR NOT 
 
 **ALGORITHM:**
 * Step 1. Start the program
-* Step 2. Get the input as string from the user. And store it in another variable.
-* Step 3. First split that input string then process the reverse function and join.
-* Step 4. Compare the both input string and result string.
-* Step 5. If both are equal print as Palindrome ,if not print as Not a palindrome
-* Step 6. Stop 
+* Step 2. Create function with name as reverse and pass the parameter as str.
+* Step 3. Iterate the for loop until length of the string and return the reversed string.
+* Step 4. Create a function isPalindrome and pass parameter as str.
+* Step 5. Check whether the reversed string and the input string is equal.
+* Step 6. If both are equal print as palindrome ,If not print not a palindrome.
 
 **PSEUDOCODE:**
 ```
 BEGIN
-INIT str=”Technologies”
-SET arr=str.split(‘ ‘)
-    IF (arr.reverse().join(‘ ‘) ===str)
-       PRINT palindrome
-    ELSE 
-      PRINT not a palindrome
+FUNCTION REVERSE( str )
+    SET rev_str = "";
+    FOR( let i = str.length-1 ;i >= 0 ;i--)
+      rev_str+= str[i]
+    return rev_str
+    ENDFOR
+  FUNCTION IS_PALINDROME( str )
+    reverse_str = reverse(str)
+    IF( reverse_str === str)
+      RETURN("passed string is palindrome ")
+    ENDIF
+    ELSE
+      RETURN("passed string is not palindrome")
+  SET string = "Technology"
+  IS_PALINDROME(string)
 END
 ```
 
 ***CODE:***
 ```js
 "use strict"
-var str = "Technologies";
-var arr=str.split('')
-if(arr.reverse().join('') === str){
-    console.log("Palindrome");
-}
-else{
-    console.log("Not a Palindrome");
-}
+  function reverse( str )
+  {
+    let rev_str = "";
+    for( let i = str.length-1 ;i >= 0 ;i--)
+    {
+      rev_str+= str[i];
+    }
+    return rev_str;
+  }
+  function is_palindrome( str )
+  {
+    reverse_str = reverse(str);
+    if( reverse_str === str)
+    {
+      console.log("passed string is palindrome ");
+    }
+    else
+    {
+      console.log("passed string is not palindrome")
+    }
+  }
+  let string = "Technology";
+  is_palindrome(string);
 ```
 
 **OUTPUT:**
 ```js
-Not a Palindrome
+passed string is not palindrome
 ```
 
 
