@@ -74,6 +74,7 @@ END
 
 ***CODE:***
 ```js
+"use strict"
 var one = 1;
 var one_again = 1;
 var one_str= "1";  
@@ -115,6 +116,7 @@ END
 
 ***CODE:***
 ```js
+"use strict"
 var str = "constructor";
 var ar=str.split('')
 console.log(ar.reverse().join(''));
@@ -149,6 +151,7 @@ BEGIN
 
 ***CODE:***
 ```js
+"use strict"
 var str = "Yavar Tech Works";
 function rev(str){
     var arr = str.split(" ");
@@ -189,6 +192,7 @@ END
 
 ***CODE:***
 ```js
+"use strict"
 var str = "Technologies";
 var arr=str.split('')
 if(arr.reverse().join('') === str){
@@ -225,6 +229,7 @@ END
 
 ***CODE:***
 ```js
+"use strict"
 let myArray = [1, 2, 3, 4];  
 const returnValue = myArray.map((element) => {
     return element * element;
@@ -241,6 +246,7 @@ Array(4) [ 1, 4, 9, 16 ]
 
 **Code**
 ```js
+"use strict"
 let myArray = [1, 2, 3, 4];
   
 const returnValue = myArray.forEach((element) => {
@@ -274,6 +280,7 @@ PRINT (Math.floor((Math.random() * 5) + 1));
 
 ***CODE:***
 ```js
+"use strict"
 var random=Math.floor(Math.random() * 5) + 1;
 console.log(random);
 ```
@@ -304,6 +311,7 @@ END
 
 ***CODE:***
 ```js
+"use strict"
 let Arr =([1,2,9,4,5,8,3,5,1,4,5])
 let uniqueArr= [...new Set(Arr)];
 console.log(uniqueArr);
@@ -338,6 +346,7 @@ END
 
 ***CODE:***
 ```js
+"use strict"
 function sumOfN(n){
     var num =0;
     for(let i = 1; i<=n ;i++){
@@ -377,6 +386,7 @@ PRINT RESULT
 
 ***CODE:***
 ```js
+"use strict"
 ar n = 100;
 var oddSum = 0;
 var evenSum = 0;
@@ -421,6 +431,7 @@ END
 
 ***CODE***
 ```jS
+"use strict"
 var arr1 = [1,2,3,4,5];
 var arr2 = [6,7,8,9,10];
 const newarr = arr1.concat(arr2); 
@@ -455,6 +466,7 @@ END
 
 ***CODE:***
 ```javascript
+"use strict"
 var arr = [
     {id: 1, name: 'Stephen covey'},
     {id: 2, name: 'Robin Sharma' }, 
@@ -506,6 +518,7 @@ END
 
 ***CODE***
 ```javascript
+"use strict"
 const arr1=[{id: 1, name: 'edison'}, {id: 1, name: 'edison'}];
  const arr2=[{id: 1, name: 'edison'},{id: 2, name: 'edison'}];
 
@@ -537,6 +550,7 @@ END
 
 ***CODE***
 ```javascript
+"use strict"
 let arr = [1,4,2,3,[10,20,20], [100,500,700,600],
 [2000,1000]]
 console.log(arr.flat(3));
@@ -604,6 +618,7 @@ END
 ```
 ***CODE***
 ```js
+"use strict"
 var arr=[{id: 1, name: 'edison'}, {id: 2, name: 'Annand'}, {id: 3, name: 'Vasnath'}]
 let groupbyid = arr.reduce((r, index) => {
     r[index.id]=index[r.id]+1 || 1
@@ -647,6 +662,7 @@ PRINT (string);
 
 ***CODE***
 ```js
+"use strict"
 let n = 5;
 let string = "";
 for (let i = 1; i <= n; i++) {
@@ -698,6 +714,7 @@ END
 
 ***CODE***
 ```js
+"use strict"
 let n = 4;
 let string = "";
 let count=1;
@@ -749,6 +766,7 @@ PRINT number
 
 ***CODE***
 ```js
+"use strict"
 var rows=4;
 let num="";
 let count=1;
@@ -813,6 +831,7 @@ END
 
 ***CODE***
 ```js
+"use strict"
 var n=5;
 let string= "";
 for(var i=1;i<=n;i++)
