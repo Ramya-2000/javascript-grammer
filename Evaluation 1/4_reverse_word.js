@@ -1,9 +1,7 @@
-var str = "Yavar Tech Works";
-function rev(str){
-    var arr = str.split(" ");
-    var reverse = arr.map(i=>{
-        return i.split('').reverse().join("");
-    });
-    return reverse.join(" ");
+"use strict"
+function reverse (word) {
+    word = word.split(" ").reverse().join(" ")
+    return word
 }
-console.log(rev(str));
+word = 'Yavar Tech Works'
+console.log(reverse(word));
