@@ -133,7 +133,7 @@ function reverseString(str) {
     }
     return newString;
 }
-reverseString("Constructor");
+console.log(reverseString("Constructor"));
 ```
 **OUTPUT:**
 ```js
