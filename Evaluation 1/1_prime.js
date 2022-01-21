@@ -11,3 +11,4 @@ else if (n > 1) {
     return `${n} is a prime number`
 }
 console.log(isPrime(29));
+}
