@@ -1,3 +1,4 @@
+
 function isPrime(n){
 if (n === 1 || typeof n === "string"|| n < 1) {
     output = "Enter the valid value";
@@ -10,5 +11,8 @@ else if (n > 1) {
     }
     return `${n} is a prime number`
 }
-console.log(isPrime(29));
+return output;
 }
+console.log(isPrime("ten"));
+console.log(isPrime(25));
+console.log(isPrime(19)); 

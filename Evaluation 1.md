@@ -3,8 +3,8 @@
 **ALGORITHM:**
 * Step 1.Start the program.
 * step 2 Write a function with parameter and assign a variable.
-* Step 3. Check the number is n<2 means return “not a prime”.
-* Step 4. if the condition fails for loop will be executed 
+* Step 3.If the number is one or string or less than one ,Print as enter the valid value.
+* Step 4.Number is greater than one means execute the for loop.
 * Step 5. Check the condition n%i===0.If true means it return not a prime number.
 * Step 6. If condition fails it will return as prime number.
 * Step 7. Stop the program.
@@ -13,14 +13,16 @@
 ```
 BEGIN
    FUNCTION isPrime(n)
-     IF (n<2)
-     RETURN number is not a prime
+    IF(n === 1 || typeof n === "string"|| n < 1) 
+    output = "Enter the valid value"
+       ELSEIF(n > 1) 
     FOR (let i=2;i<n;i++)
          IF (n%i===0)
          RETURN number is not a prime number
          ENDIF
     ENDFOR
          RETURN number is  prime number
+    RETURN OUTPUT
    ENDFUNCTION
 END
 ```
@@ -28,20 +30,28 @@ END
 ***CODE:***
 ```js
 function isPrime(n){
-    if (n<2)
-      return `${n} is not a prime`
+if (n === 1 || typeof n === "string"|| n < 1) {
+    output = "Enter the valid value";
+}
+else if (n > 1) {
     for(let i=2;i<n;i++){
-        if(n%i ===0){
+        if(n%i ==0){
             return `${n} is not a prime number`
         }
     }
     return `${n} is a prime number`
 }
-console.log(isPrime(29));
+return output;
+}
+console.log(isPrime("ten"));
+console.log(isPrime(25));
+console.log(isPrime(19)); 
 ```
 **OUTPUT:**
 ```js
-29 is a prime number
+Enter the valid value
+25 is not a prime number 
+19 is a prime number 
 ```
 
 
