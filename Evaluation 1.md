@@ -218,7 +218,7 @@ END
     }
     else
     {
-      console.log("passed string is not palindrome")
+      console.log("passed string is not palindrome");
     }
   }
   let string = "Technology";
