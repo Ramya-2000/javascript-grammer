@@ -371,7 +371,7 @@ END
 ```js
 "use strict"
 const numbers = [1,2,9,4,5,8,3,5,1,4,5];
-const uniqueNumbers = [];
+const uniqueNumbers= [];
 numbers.forEach((item) => {  
     if(!uniqueNumbers.includes(item)){  
        uniqueNumbers.push(item);  
@@ -401,7 +401,7 @@ FUNCTION sumOfN(n)
 NUM=0;
 i and num as integer
 for i upto n increment i by 1 and i=1 
-{ num=num+i; } 
+ num=num+i; 
 PRINT num; 
 END FUNCTION
 END
@@ -436,7 +436,7 @@ console.log(sumOfN(10));
 
 **PSEUDOCODE:**
 ```
-INIT i=1, n = 6;
+INIT i=1, n = 100;
 INIT oddSum = 0;
 INIT evenSum = 0;
 WHILE(i<=n)
@@ -450,7 +450,7 @@ PRINT RESULT
 ***CODE:***
 ```js
 "use strict"
-ar n = 100;
+n = 100;
 var oddSum = 0;
 var evenSum = 0;
 var i = 1; // initialization
