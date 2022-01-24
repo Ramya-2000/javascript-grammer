@@ -29,6 +29,7 @@ END
 
 ***CODE:***
 ```js
+"use strict";
 function isPrime(n){
 if (n === 1 || typeof n === "string"|| n < 1) {
     output = "Enter the valid value";
@@ -126,6 +127,7 @@ END
 ```
 ***CODE:***
 ```js
+"use strict";
 function reverseString(str) {
     var newString = "";
     for (var i = str.length - 1; i >= 0; i--) {
