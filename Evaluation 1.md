@@ -245,17 +245,17 @@ passed string is not palindrome
 **ALGORITHM:**
 * Step 1. start the program
 * Step 2. Create an array and get the input.
-* Step 3. Use the map method with the array and write the event.
-* Step 4. Use the forEach to iterate the values.
+* Step 3. Use the map method with the array and iterate over the elements.
 * Step 5. Print the values
 * Step 6. stop
 
 **PSEUDOCODE:**
 ```
 BEGIN
-INIT array elements
-PRINT map(element => element * element)
-PRINT forEach(element => element * element)
+SET myArray = [1, 2, 3, 4]  
+SET returnValue = myArray.map((element) => 
+    RETURN element * element
+RETURN returnValue
 END
 ```
 
@@ -275,12 +275,27 @@ Array(4) [ 1, 4, 9, 16 ]
 ```
 
 **Foreach**
+**ALGORITHM**
+* Step 1. start the program
+* Step 2. Create an array and get the input.
+* Step 3. Use the map method with the array and do some certain operation.
+* Step 5. Print the values
+* Step 6. stop
+
+**PSEUDOCODE**
+```
+BEGIN
+SET myArray = [1, 2, 3, 4]  
+CONST returnValue = myArray.forEach((element) => 
+    RETURN element * element
+RETURN returnValue
+END
+```
 
 **Code**
 ```js
 "use strict"
-let myArray = [1, 2, 3, 4];
-  
+let myArray = [1, 2, 3, 4];  
 const returnValue = myArray.forEach((element) => {
     return element * element;
 });
