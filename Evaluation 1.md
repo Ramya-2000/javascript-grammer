@@ -255,7 +255,7 @@ BEGIN
 SET myArray = [1, 2, 3, 4]  
 SET returnValue = myArray.map((element) => 
     RETURN element * element
-RETURN returnValue
+RETURN returnValue 
 END
 ```
 
@@ -278,34 +278,38 @@ Array(4) [ 1, 4, 9, 16 ]
 **ALGORITHM**
 * Step 1. start the program
 * Step 2. Create an array and get the input.
-* Step 3. Use the map method with the array and do some certain operation.
+* Step 3. Use the forEach method with the array and do some certain operation.
 * Step 5. Print the values
 * Step 6. stop
 
 **PSEUDOCODE**
 ```
 BEGIN
-SET myArray = [1, 2, 3, 4]  
-CONST returnValue = myArray.forEach((element) => 
-    RETURN element * element
-RETURN returnValue
+INIT myAwesomeArray=
+    { id: 1, name: "shree" }
+    { id: 2, name: "john" }
+    { id: 3, name: "Ali" }
+myAwesomeArray.forEach(element =>
+ RETURN element.name
 END
 ```
 
 **Code**
 ```js
 "use strict"
-let myArray = [1, 2, 3, 4];  
-const returnValue = myArray.forEach((element) => {
-    return element * element;
-});
-console.log(returnValue);
+const myAwesomeArray = [
+    { id: 1, name: "shree" },
+    { id: 2, name: "john" },
+    { id: 3, name: "Ali" },
+  ]
+myAwesomeArray.forEach(element => console.log(element.name))
 ```
 
 **output**
 ```js
-undefined 
-undefined
+shree 
+john 
+Ali
 ```
 
 
