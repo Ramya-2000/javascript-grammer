@@ -327,6 +327,7 @@ Ali
 BEGIN
 INIT random
 PRINT (Math.floor((Math.random() * 5) + 1));
+RETURN random
 ```
 
 ***CODE:***
@@ -338,34 +339,45 @@ console.log(random);
 
 **OUTPUT:**
 ```js
+4
 3
+2
+1
 ```
 
 ### 8.REMOVE DUPLICATE FROM THE GIVEN ARRAY [1,2,9,4,5,8,3,5,1,4,5]
 **ALGORITHM:**
 * Step 1. Start the program
 * Step 2. Create a array with number values.
-* Step 3. use SET method
-* Step 4. Array is initialized with SET method
+* Step 3. Create an empty array with name as UniqueNumbers.
+* Step 4. If two numbers are not equal then print that value in UniqueNumbers.
 * Step 5. Print the values where the duplicates will be removed.
 * Step 6. stop the program.
 
 ***PSEUDOCODE:***
 ```
 BEGIN
-INIT numbers
-INIT uniqueArr
-SET numbers
-PRINT uniqueArr
+INIT numbers = [1,2,9,4,5,8,3,5,1,4,5];
+SET uniqueNumbers = [];
+numbers.forEach((item) =>  
+  IF(!uniqueNumbers.includes(item)) 
+       uniqueNumbers.push(item) 
+    ENDIF  
+RETURN uniqueNumbers
 END
 ```
 
 ***CODE:***
 ```js
 "use strict"
-let Arr =([1,2,9,4,5,8,3,5,1,4,5])
-let uniqueArr= [...new Set(Arr)];
-console.log(uniqueArr);
+const numbers = [1,2,9,4,5,8,3,5,1,4,5];
+const uniqueNumbers = [];
+numbers.forEach((item) => {  
+    if(!uniqueNumbers.includes(item)){  
+       uniqueNumbers.push(item);  
+    }  
+ });  
+console.log(uniqueNumbers);
 ```
 
 **OUTPUT:**
