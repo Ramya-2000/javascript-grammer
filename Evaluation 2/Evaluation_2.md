@@ -23,6 +23,7 @@ END
 
 **CODE**
 ```js
+"use strict";
 for (var counter = 2; counter <= 200; counter++) {
     var isPrime=true;
     for (var i = 2; i <= counter; i++) {
@@ -109,6 +110,7 @@ END
 ```
 **CODE**
 ```js
+"use strict";
 var a=[1,2,3,4,5,6,7,8,9,10];
 var b = [2,4,5,7,11,15];
 for(var i=0;i<a.length;i++){
@@ -146,6 +148,7 @@ END
 ```
 **CODE**
 ```js
+"use strict";
 setTimeout(function () {
     console.log("Welcome to javascript");
 }, 2000);
@@ -170,6 +173,8 @@ SET s=function(a,b)
 PRINT(s(4,5));
 ```
 **CODE**
+```js
+"use strict";
 let s=function(a,b){
     return a*b;
   }
@@ -269,6 +274,7 @@ END
 ```
 **CODE**
 ```js
+"use strict";
 const channel={
     title: "Javascript",
     languages: ["tamil","english"],
@@ -315,6 +321,7 @@ END
 ```
 **CODE**
 ```js
+"use strict";
 function channel() {
     this.firstName = "unknown";
     this.lastName = "unknown";
@@ -351,6 +358,8 @@ CLASS CAR
 END
 ```
 **CODE**
+```js
+"use strict";
 class Car {
     constructor(name, year) {
       this.name = name;
@@ -360,6 +369,7 @@ class Car {
   
   const myCar = new Car("Ford", 2014);
   console.log(myCar.name + " " + myCar.year);
+  ```
 
   **OUTPUT**
   ```js
@@ -384,12 +394,15 @@ class Car {
   PRINT returnValue
   ```
   **CODE**
+```js
+  "use strict";
 let myArray = [1, 2, 3, 4];
   
 const returnValue = myArray.map((element) => {
     return element * element;
 })
 console.log(returnValue);
+```
 **OUTPUT**
 ```js
 Array(4) [ 1, 4, 9, 16 ]
@@ -413,6 +426,7 @@ PRINT newArray1
 
 **CODE**
 ```js
+"use strict";
  const array1 = [1, 2, 3, 4];
  const newArray1 = array1.reduce((previousValue, currentValue) => previousValue + currentValue);
  console.log(newArray1);//reduce
@@ -439,11 +453,14 @@ END
 ```
 
 **CODE**
+```js
+"use strict";
 const words = ['java', 'javascript', 'elite', 'constructor','yavar','value'];
 
 const result = words.filter(word => word.length <=5);
 
 console.log(result);
+```
 
 **OUTPUT**
 ```js
@@ -481,6 +498,7 @@ SET findMissingNumber = (arr) => {
 
   **CODE**
   ```js
+  "use strict";
   const findMissingNumber = (arr) => {
     for (let i = 1; i <= arr.length; i++) {
       if (arr[i - 1] !== i) {
@@ -520,6 +538,7 @@ PRINT(getAge('2000-03-12'))
 ```
 **CODE**
 ```js
+"use strict";
 const getAge = (birthDateString) => {
   const today = new Date();
   const birthDate = new Date(birthDateString);
@@ -564,7 +583,8 @@ console.log(getAge('2000-03-12'));
  END
  ```
  **CODE**
- ```js
+```js
+ "use strict";
  var a = 5;
     var b;
     b = a;
@@ -597,6 +617,7 @@ PRINT d
 ```
 **CODE**
 ```js
+"use strict";
     var c = { greeting : 'Welcome' };
     var d;
     d = c;
@@ -631,6 +652,7 @@ END
 ```
 **CODE**
 ```js
+"use strict";
 const log=console.log;
 const functionArity= value=>value.length;
 function sum(a,b){
@@ -663,6 +685,7 @@ END
 ```
 **CODE**
 ```js
+"use strict";
 function multiply(a) {
     return (b) => {
         return (c) => {
