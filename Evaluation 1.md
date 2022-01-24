@@ -24,12 +24,12 @@ BEGIN
          RETURN number is  prime number
     RETURN OUTPUT
    ENDFUNCTION
-END
+END 
 ```
 
 ***CODE:***
 ```js
-"use strict";
+"use strict"; 
 function isPrime(n){
 if (n === 1 || typeof n === "string"|| n < 1) {
     output = "Enter the valid value";
@@ -615,7 +615,7 @@ END
 
 ***CODE***
 ```javascript
-"use strict"
+"use strict";
 let arr = [1,4,2,3,[10,20,20], [100,500,700,600],
 [2000,1000]]
 console.log(arr.flat(3));
