@@ -27,6 +27,7 @@ END
 
 **CODE**
 ```js
+"use strict";
 function primeNumber(value){
 if(typeof value === "number" && value > 2 ){
 for (let counter = 2; counter <= value; counter++) {
@@ -210,6 +211,7 @@ let s=function(a,b){
 * Step 2:Create function with name as add with parameters num1 and num2.
 * Step 3:Add the numbers and return the result.
 * Step 4:Stop the program.
+
 **PSEUDOCODE**
 ```
 BEGIN
@@ -220,6 +222,7 @@ END
 ```
 **CODE**
 ```js
+"use strict";
 function add(num1, num2) {
     return num1 + num2;
 }add(3,4);
@@ -484,10 +487,69 @@ Array(4) [ "java", "elite", "yavar", "value" ]
 
 ### 8.Count Total number of zeros from 1 up to 50
 **ALGORITHM**
-**PSEUDOCODE**
-**CODE**
-**OUTPUT**
+* Step 1. Use Strict mode as global.
+* Step 2. Create two variables globally. Then convert it to string for validation of float
+* Step 3. Validate it of number and float. Create a variable with 0.
+* Step 4. Use for loop to iterate the number and convert it to string.
+* Step 5. Split the number by 0 then make it count to a varibale.
+* Step 6. Then print the value.
 
+**PSEUDOCODE**
+```
+BEGIN
+"use strict";
+INIT start = 1;
+INIT end = 50;
+INIT startConvertToString = start + "" ;
+INIT endConvertToString = end + "" ;
+IF(typeof start === "number" && typeof end === "number" )THEN
+   IF(startConvertToString.indexOf(".") === -1 && endConvertToString.indexOf(".") === -1)THEN
+        INIT count = 0;
+        FOR (let i = start ; i <= end ; i++ ) DO
+            INIT numberToString = i + "" ;
+            SET count += numberToString.split("0").length - 1;
+        ENDFOR
+        PRINT(count);
+    ELSE
+        PRINT("The float value not accepted"); 
+    ENDIF
+ELSE
+    PRINT("The string value not accepted");
+ENDIF
+```
+
+**CODE**
+```js
+"use strict";
+//give input range find number of zero
+const start = 1;
+const end = 50;
+//convert input value to string
+const startConvertToString = start + "" ;
+const endConvertToString = end + "" ;
+// check if type of value is number or not 
+if(typeof start === "number" && typeof end === "number" ){
+   if(startConvertToString.indexOf(".") === -1 && endConvertToString.indexOf(".") === -1){
+        let count = 0;
+        for(let i = start ; i <= end ; i++ ){
+            let numberToString = i + "" ;
+            //split the number by 0 and add length - 1 to count
+            count += numberToString.split("0").length - 1;
+        }
+        console.log(count);
+    }
+    else{
+        console.log("The float value not accepted"); 
+    }
+}
+else{
+    console.log("The string value not accepted");
+}
+```
+**OUTPUT**
+```js
+5
+``` 
 
 ### 9.The following array of numbers show the missing number? ([1,2,3,5,6])
 **ALGORITHM**
