@@ -662,8 +662,8 @@ console.log(getAge('2000-03-12'));
  **CODE**
 ```js
  "use strict";
- var a = 5;
-    var b;
+ let a = 5;
+    let b;
     b = a;
     a = 3;
     console.log(a);
@@ -695,8 +695,8 @@ PRINT d
 **CODE**
 ```js
 "use strict";
-    var c = { greeting : 'Welcome' };
-    var d;
+    let c = { greeting : 'Welcome' };
+    let d;
     d = c;
   
     // Mutating the value of c
