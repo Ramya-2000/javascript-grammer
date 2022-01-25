@@ -1,32 +1,37 @@
 ### 1.Prime Number between 1 to 200
 **ALGORITHM** 
 * Step 1:Start the program.
-* Step 2:Declare counter variable and isPrime as true.
+* Step 2:Declare counter variable and isPrime as true and creste a function primenumber.
 * Step 3:Iterate the values from 2 to 200.Put condition as counter divisible by i and i not equal to counter.
 * Step 4:If number is not prime print false and if it is prime means print the counter.
-* Step 5:Stop the program.
+* Step 5:Call the function primenumber and pass 200 as arguments.
+* Step 6:Stop the program.
 
 **PSEUDOCODE**
 ```
 BEGIN
-FOR(var counter = 2; counter <= 200; counter++) 
+FUNCTION PRIMENUMBER(value)
+IF(typeof value === "number" && value > 2 )
+FOR(let counter = 2; counter <= 200; counter++) 
     SET isPrime=true
-    FOR(var i = 2; i <= counter; i++) 
+    FOR(let i = 2; i <= counter; i++) 
         IF (counter%i===0 && i!==counter) {
             isPrime=false
         ENDFOR
     ENDFOR
     IF (isPrime === true) 
         PRINT counter
+PRIMENUMBER(200)
 END
 ```
 
 **CODE**
 ```js
-"use strict";
-for (var counter = 2; counter <= 200; counter++) {
-    var isPrime=true;
-    for (var i = 2; i <= counter; i++) {
+function primeNumber(value){
+if(typeof value === "number" && value > 2 ){
+for (let counter = 2; counter <= value; counter++) {
+    let isPrime=true;
+    for (let i = 2; i <= counter; i++) {
         if (counter%i===0 && i!==counter) {
             isPrime=false;
         }
@@ -35,8 +40,10 @@ for (var counter = 2; counter <= 200; counter++) {
                 console.log(counter);
     }
 }
-```
-
+}   
+}           
+primeNumber(200);
+```  
 **OUTPUT**
 ```js
 2 
@@ -92,41 +99,47 @@ for (var counter = 2; counter <= 200; counter++) {
 * Step 1:Start the program.
 * Step 2:Create two arrays and declare the values.
 * Step 3:Iterate the two for loop upto length of two arrays.
-* Step 4:Put the if condition and check a[i]=b[i].
-* Step 5:Print the value in a[i] if both are equal.
+* Step 4:Put the if condition and check arr1[i]===arr2[j].
+* Step 5:Print the value in arr2[j] if both are equal.
 * Step 6:Stop the program.
 
 **PSEUDOCOE**
 ```
 BEGIN
-SET a=[1,2,3,4,5,6,7,8,9,10]
-SET b = [2,4,5,7,11,15]
-FOR(var i=0;i<a.length;i++)
-    for(var j=0;j<b.length;j++)
-        IF(a[i]==b[j])
-            PRINT(a[i])
+SET arr1 =[1,2,3,4,5,6,7,8,9,10]
+SET arr2 = [2,4,5,7,11,10]
+FUNCTION COMMONNUMBER(arr1, arr2) 
+    SET common = []
+     FOR(let i in arr1) 
+      FOR(let j in arr2) 
+        IF (arr1[i] === arr2[j])  
+          common.push(arr2[j]); 
+        ENDIF
     ENDFOR
-END
+RETURN common
+COMMONNUMBER(arr1, arr2)
 ```
 **CODE**
 ```js
 "use strict";
-var a=[1,2,3,4,5,6,7,8,9,10];
-var b = [2,4,5,7,11,15];
-for(var i=0;i<a.length;i++){
-    for(var j=0;j<b.length;j++){
-        if(a[i]==b[j]){
-            console.log(a[i])
+const arr1 =[1,2,3,4,5,6,7,8,9,10];
+const arr2 = [2,4,5,7,11,10];
+function commonNumber(arr1, arr2) {
+    let common = []; 
+    for (let i in arr1) {
+      for (let j in arr2) {
+        if (arr1[i] === arr2[j]) { 
+          common.push(arr2[j]); 
         }
+      }
     }
+   console.log(common); 
 }
+commonNumber(arr1, arr2);
 ```
 **OUTPUT**
 ```js
-2
-4
-5
-7
+Array(5) [ 2, 4, 5, 7, 10 ]
 ```
 
 ### 3.Explain about function Anatomy, Anonymous function and Assigning function to a variable with an example? 
@@ -244,7 +257,7 @@ function java(func){
       else
       console.log("Its not a function");
 }
-var obj ={};
+let obj ={};
 java(obj);
 ```
 OUTPUT:
@@ -366,7 +379,6 @@ class Car {
       this.year = year;
     }
   }
-  
   const myCar = new Car("Ford", 2014);
   console.log(myCar.name + " " + myCar.year);
   ```
