@@ -346,7 +346,7 @@ function channel() {
     this.lastName = "unknown";
 }
 
-var channel1 = new channel();
+let channel1 = new channel();
 channel1.firstName = "javascript";
 channel1.lastName = "tutorial";
             
