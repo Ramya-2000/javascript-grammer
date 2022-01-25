@@ -178,6 +178,7 @@ Welcome to javascript
 * Step 2:Assign the function with parameters a and b to the variable s.
 * Step 3:Multiply a and b then return.Instead of calling function we can call that variable.
 * Step 4:Stop the program.
+
 **PSEUDOCODE**
 ```
 BEGIN
@@ -192,6 +193,7 @@ let s=function(a,b){
     return a*b;
   }
   console.log(s(4,5));
+  ```
 **OUTPUT**
 ```js
 20
@@ -202,6 +204,7 @@ let s=function(a,b){
 * It consist of the function keyword and following by name of the function.
 * The function can have 0, 1 or many parameters. The order of these paramaters determine the function's signature. The number of paramaters is called arity.
 * In JavaScript, a function always returns a value. The default return value of a function is undefined.
+
 **ALGORITHM**
 * Step 1:Start the program.
 * Step 2:Create function with name as add with parameters num1 and num2.
@@ -275,14 +278,14 @@ Its not a function
 **PSEUDOCODE**
 ```
 BEGIN
-SET CHANNEL={
+SET CHANNEL=
     title: "Javascript"
     languages: ["tamil","english"]
-    SUBSCRIBE(){
+    SUBSCRIBE()
         PRINT this
     SHOWVIDEOS()
        PRINT(this.languages)
-CHANNEL.SHOWVIDEOS();
+CHANNEL.SHOWVIDEOS()
 END
 ```
 **CODE**
@@ -323,7 +326,7 @@ length: 2
 **PSEUDOCODE**
 ```
 BEGIN
-FUNCTION CHANNEL() {
+FUNCTION CHANNEL() 
     this.firstName = "unknown"
     this.lastName = "unknown"
 SET channel1 = new channel()
