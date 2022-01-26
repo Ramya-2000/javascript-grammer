@@ -20,8 +20,7 @@ class cat{
     }
     wander(amount){
 
-    }
-
+    } 
 }
 
 let sam = new cat("sam",5,1,"sleeping");
