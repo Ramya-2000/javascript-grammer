@@ -12,4 +12,4 @@ console.log(time(1));//[undefined]
  console.log(a.map(time));//[undefined]
 //  console.log(y);
 //   console.log(z);
-  //prayer("Make me understand JavaScript")
+  //prayer("Make me understand JavaScript")     
