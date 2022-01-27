@@ -548,33 +548,32 @@ if(typeof start === "number" && typeof end === "number" ){
 **PSEUDOCODE**
 ```
 BEGIN
-SET findMissingNumber = (arr) => {
-    FOR (let i = 1; i <= arr.length; i++) 
-      IF (arr[i - 1] !== i) 
-        RETURN  i
-      ENDIF
-    ENDFOR
-  SET arr = [1, 2, 3,5,6];
-  RETURN findMissingNumber(arr)
-  END
+SET arr = [1,2,3,5,6]
+COUNT = 5
+SET missing = new Array()
+FOR(var i = 1; i <= count; i++) 
+  IF(arr.indexOf(i) == -1) 
+    missing.push(i)
+RETURN missing
+END
   ```
 
   **CODE**
   ```js
   "use strict";
-  const findMissingNumber = (arr) => {
-    for (let i = 1; i <= arr.length; i++) {
-      if (arr[i - 1] !== i) {
-        return i;
-      }
-    }
+  let arr = [1,2,3,5,6]
+  count = 5;
+  let missing = new Array();
+  for (let i = 1; i <= count; i++) {
+  if (arr.indexOf(i) == -1) {
+    missing.push(i);
   }
-  const arr = [1, 2, 3,5];
-  console.log(findMissingNumber(arr));
+}
+console.log(missing);
   ```
   **OUTPUT**
   ```js
-  4
+  [4]
   ```
 
   ### 10.Write a program for calculating age using Date of birth? (1990)
