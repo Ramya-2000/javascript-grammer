@@ -488,10 +488,10 @@ Array(4) [ "java", "elite", "yavar", "value" ]
 ### 8.Count Total number of zeros from 1 up to 50
 **ALGORITHM**
 * Step 1. Use Strict mode as global.
-* Step 2. Create two variables globally. Then convert it to string for validation of float
+* Step 2. Create two variables globally.
 * Step 3. Validate it of number and float. Create a variable with 0.
 * Step 4. Use for loop to iterate the number and convert it to string.
-* Step 5. Split the number by 0 then make it count to a varibale.
+* Step 5. Split the number by 0 then make it count to a variable.
 * Step 6. Then print the value.
 
 **PSEUDOCODE**
@@ -500,10 +500,7 @@ BEGIN
 "use strict";
 INIT start = 1;
 INIT end = 50;
-INIT startConvertToString = start + "" ;
-INIT endConvertToString = end + "" ;
 IF(typeof start === "number" && typeof end === "number" )THEN
-   IF(startConvertToString.indexOf(".") === -1 && endConvertToString.indexOf(".") === -1)THEN
         INIT count = 0;
         FOR (let i = start ; i <= end ; i++ ) DO
             INIT numberToString = i + "" ;
@@ -512,9 +509,6 @@ IF(typeof start === "number" && typeof end === "number" )THEN
         PRINT(count);
     ELSE
         PRINT("The float value not accepted"); 
-    ENDIF
-ELSE
-    PRINT("The string value not accepted");
 ENDIF
 ```
 
@@ -524,12 +518,8 @@ ENDIF
 //give input range find number of zero
 const start = 1;
 const end = 50;
-//convert input value to string
-const startConvertToString = start + "" ;
-const endConvertToString = end + "" ;
 // check if type of value is number or not 
 if(typeof start === "number" && typeof end === "number" ){
-   if(startConvertToString.indexOf(".") === -1 && endConvertToString.indexOf(".") === -1){
         let count = 0;
         for(let i = start ; i <= end ; i++ ){
             let numberToString = i + "" ;
@@ -539,12 +529,8 @@ if(typeof start === "number" && typeof end === "number" ){
         console.log(count);
     }
     else{
-        console.log("The float value not accepted"); 
+        console.log("The string value not accepted"); 
     }
-}
-else{
-    console.log("The string value not accepted");
-}
 ```
 **OUTPUT**
 ```js
