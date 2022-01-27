@@ -634,7 +634,7 @@ console.log(getAge('2000'));
   * Step 5:Stop the program.
 
   **PSEUDOCODE**
-  ```
+ ```
   BEGIN
   SET a = 5
     SET b
@@ -714,7 +714,7 @@ END
 ```
 **CODE**
 ```js
-"use strict";
+"use strict"; 
 const log=console.log;
 const functionArity= value=>value.length;
 function sum(a,b){
