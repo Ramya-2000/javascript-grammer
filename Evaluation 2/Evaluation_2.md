@@ -596,7 +596,7 @@ SET getAge = (birthDateString) =>
     (today.getMonth() === birthDate.getMonth() && today.getDate() < birthDate.getDate()))
     PRINT yearsDifference - 1
   PRINT yearsDifference;
-PRINT(getAge('2000-03-12'))
+PRINT(getAge('2000'))
 ```
 **CODE**
 ```js
@@ -614,10 +614,10 @@ const getAge = (birthDateString) => {
     return yearsDifference - 1;
   }
 
-  return yearsDifference;
+  return yearsDifference; 
 };
 
-console.log(getAge('2000-03-12'));
+console.log(getAge('2000'));
 ```
 **OUTPUT**
 ```js
