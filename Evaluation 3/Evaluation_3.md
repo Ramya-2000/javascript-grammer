@@ -9,19 +9,15 @@
 **PSEUDOCODE**
 ```
 BEGIN
-  "use strict";
-  const channel={
+  INIT channel
     title: "Javascript",
     languages: ["tamil","english"],
     subscribe : () => {
-        console.log(this.title); //arrow function doesnot bind 'this'
-    },
+        RETURN(this.title)
     Showvideos(){
-        console.log(this); //normal function bind 'this'
-    },
-};
-channel.subscribe(); 
-channel.Showvideos();
+        RETURN (this)
+channel.subscribe() 
+channel.Showvideos()
 END
 ```
 
@@ -136,13 +132,14 @@ console.log(i);
 **PSEUDOCOE**
 ```
 BEGIN
-for (var i = 0; i <10; i++) {
-    function a(i){
- setTimeout(function() { 
-    console.log(i);
-    },  500 * i);
-}a(i);
-}
+FOR(var i = 0; i <10; i++) 
+    function a(i)
+ setTimeout(function() 
+    RETURN (i)
+    },  500 * i)
+    ENDFOR
+a(i)
+
 ```
 
 **CODE**
@@ -179,15 +176,13 @@ for (var i = 0; i <10; i++) {
 **PSEUDOCODE**
 ```
 BEGIN
-"use strict";
-class Car {
-    constructor(name, year) {
-      this.name = name;
-      this.year = year;
-    }
-  }
-  const myCar = new Car("Ford", 2014);
-  console.log(myCar.name + " " + myCar.year);
+CLASS Car 
+    constructor(name, year) 
+      this.name = name
+      this.year = year
+ENDCLASS
+  INIT myCar = new Car("Ford", 2014)
+  RETURN (myCar.name + " " + myCar.year)
 END
 ```
 
@@ -216,12 +211,11 @@ Ford 2014
 **PSEUDOCODE**
 ```
 BEGIN
-class Mycar{
-    static model(){
-  return "no new model"
-}
-}
-console.log(Mycar.model());
+CLASS Mycar
+    static model()
+  RETURN "no new model"
+ENDCLASS
+RETURN (Mycar.model())
 END
 ```
 
@@ -234,10 +228,39 @@ class Mycar{
 }
 }
 console.log(Mycar.model());
+
+// static method with same name
+"use strict";
+class Mycar{
+    static model(){
+      return "no new model"
+    }
+    static model(){
+        return "ford"
+    }
+    }
+    console.log(Mycar.model());
+
+
+//invoke static inside regular function
+"use strict";
+class Mycar{
+    static model(){
+        return "duster in 2020";
+    }
+    new1(){
+        console.log(Mycar.model());
+    }
+}
+let mycar=new Mycar();
+mycar.new1();
+
 ```
 **OUTPUT**
 ```js
 no new model
+ford
+duster in 2020
 ```
 
 ### 6.How does “this” works inside the Class method with an example?
@@ -251,14 +274,13 @@ no new model
 **PSEUDOCODE**
 ```
 BEGIN
-class Car {
-    constructor(name,year) {
-      this.name = name;
-      this.year = year;
-    }
-  }
-  const myCar = new Car("Ford", 2014);
-  console.log(myCar.name + " " + myCar.year);
+CLASS Car 
+    constructor(name,year) 
+      this.name = name
+      this.year = year
+  ENDCLASS
+  INIT myCar = new Car("Ford", 2014)
+  RETURN (myCar.name + " " + myCar.year)
 END
 ```
 
@@ -300,8 +322,26 @@ ex()
 
 ### 8. Explain the event loop with an example?
 **ALGORITHM**
-* Step 1:
+* Step 1:Create the function called LevelTwo and return message as Inside Level Two.
+* Step 2:Create another function as LevelOne and return LevelTwo function inside it.
+* Step 3:Another function as main and return LevelOne.
+* Step 4:Call the main function.
 
+**PSEUDOCODE**
+```
+BEGIN
+FUNCTION LevelTwo() 
+    RETURN "Inside Level Two!"
+    ENDFUNCTION
+  FUNCTION LevelOne() 
+    LevelTwo()
+    ENDFUNCTION
+     FUNCTION main() 
+       LevelOne()
+       ENDFUNCTION
+    main()
+END
+```
 **CODE**
 ```js
 "use strict";
@@ -316,3 +356,132 @@ function LevelTwo() {
     }
     main()
 ```
+**OUTPUT**
+```js
+Inside Level Two!
+```
+
+### 9.Create a custom event listener and explain?
+**ALGORITHM**
+**PSEUDOCODE**
+**CODE**
+**OUTPUT**
+
+
+### 10.Explain the ‘super’ and ‘constructor’ keywords inside the Class with an example?
+**SUPER**
+**ALGORITHM**
+* Step 1:Create a class with name as Person.
+* Step 2:Constructor method is created and pass name and grade as parameter.
+* Step 3:Extend the child class with parent class .
+* Step 4:Use the super keyword to access the properties of parent class.
+* Step 5:Create instance of class and call the function.
+
+
+**PSEUDOCODE**
+```
+BEGIN
+CLASS Person                   
+    constructor(name, grade) 
+       this.name = name
+       this.grade = grade
+    goal() 
+       RETURN `${this.name} want to become scientist`
+    interest() 
+       return `${this.name} interested in hockey`
+ENDCLASS
+CLASS Student extends Person 
+  constructor(name, grade) 
+    super(name, grade)
+    need() 
+       return `${this.name} needs a basket ball`
+    career()                   
+       RETURN `${super.goal()}`
+       ${super.interest()}`
+       ${this.need()}`
+ENDCLASS
+INIT student = new Student("Anu")
+RETURN (student.career())
+END
+```
+
+**CODE**
+```js
+"use strict";
+class Person {                  //parent class
+    constructor(name, grade) {
+       this.name = name;
+       this.grade = grade;
+    }
+    goal() {
+       return `${this.name} want to become scientist`;
+    }
+    interest() {
+       return `${this.name} interested in hockey`;
+    }
+ }
+class Student extends Person {   //child class
+  constructor(name, grade) {
+    super(name, grade);
+    }
+    need() {
+       return `${this.name} needs a basket ball`;
+    }
+    career() {          //accessing parent properties in child class using super method        
+return`${super.goal()}  
+       ${super.interest()} 
+       ${this.need()}`;
+    }
+ }
+const student = new Student("Anu");   //instance of child class 
+console.log(student.career());
+```
+
+**OUTPUT**
+```js
+Anu want to become scientist     
+Anu interested in hockey 
+Anu needs a basket ball
+```
+
+**CONSTRUCTOR**
+**ALGORITHM**
+* Step 1:Create a class with name as Person.
+* Step 2:Constructor class is created and pass name ad age as paramaters.
+* Step 3:Write method as introduce and return name and age.
+* Step 4:Create instance of class and pass the values.
+
+**PSEUDOCODE**
+```
+BEGIN
+CLASS Person 
+    constructor(name,age)     
+      this.name = name
+      this.age=age
+  introduce() 
+  RETURN `Hello, my name is ${this.name}`+" "+ `and my age is ${this.age}`
+  ENDCLASS
+  INIT person = new Person('Nirmal','20') 
+  RETURN (person.introduce())
+  END
+  ```
+ **CODE**
+ ```js
+ "use strict";
+class Person {
+    constructor(name,age) {    //constructor method
+      this.name = name;
+      this.age=age;
+    }
+  introduce() {       //return name and age 
+  return `Hello, my name is ${this.name}`+" "+ `and my age is ${this.age}`;
+    }
+  }
+  const person = new Person('Nirmal','20');    //instance of class
+  console.log(person.introduce());
+  ```
+
+  **OUTPUT**
+  ```js
+  Hello, my name is Nirmal and my age is 20
+  ```
