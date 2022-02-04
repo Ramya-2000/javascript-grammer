@@ -104,7 +104,8 @@ let findPermutations = (string) => {
 **OUTPUT**
 ```js
   Array(12) [ "aabm", "aamb", "abam", "abma", "amab", "amba", "baam", "bama", "bmaa", "maab","maba","mbaa" ]
-​```
+​
+```
 
 ### 4.Look at the code below, you have a for loop if you have setTimeout inside it. If log the
 loop counter inside setTimeout, what will be logged?
