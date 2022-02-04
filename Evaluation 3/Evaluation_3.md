@@ -406,10 +406,33 @@ Inside Level Two!
 
 ### 9.Create a custom event listener and explain?
 **ALGORITHM**
+Step 1. Use strict mode as public. 
+Step 2. Create a new event as start.
+ Step 3. Add the event listener. Step 4. Dispatch the event.
 **PSEUDOCODE**
+```
+BEGIN
+INIT startEvent = new Event("start");
+document.addEventListener("start",FUNCTION(event) PRINT("hello world") PRINT(event),FALSE)
+document.dispatchEvent(startEvent);
+END
+```
 **CODE**
+```js
+"use strict";
+//create a new custom event  “start”
+let startEvent = new Event("start");
+//listen for the "start" event
+document.addEventListener("start",function(event){console.log("hello world");console.log(event);},false);
+//dispatch the “start” event
+document.dispatchEvent(startEvent);
+```
 **OUTPUT**
-
+```js
+hello world
+Event {isTrusted: false, type: 'start', target: document, currentTarget: document, eventPhase: 2, …}
+true
+```
 
 ### 10.Explain the ‘super’ and ‘constructor’ keywords inside the Class with an example?
 **SUPER**
