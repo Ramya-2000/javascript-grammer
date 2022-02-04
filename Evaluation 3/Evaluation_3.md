@@ -106,6 +106,56 @@ let findPermutations = (string) => {
   Array(12) [ "aabm", "aamb", "abam", "abma", "amab", "amba", "baam", "bama", "bmaa", "maab","maba","mbaa" ]
 ​
 ```
+### 3.What is the difference between when classic and arrow functions are used as event callbacks?
+**Classic Function**
+**Algorithm**
+Step 1. Create a html file. 
+Step 2. Inside the script tag write a function with name of clicked.
+Step 3. Print something inside the function. 
+Step 4. Add event of click then function is executed.
+**PSEUDOCODE**
+```
+BEGIN
+<html>
+    <head>
+        <title>Arrow event call back</title>
+        <script>
+            FUNCTION clicked(){
+                PRINT("You Clicked!!!");
+                PRINT(this)
+            }
+            document.addEventListener("click",clicked);
+        </script>
+    </head>
+    <body>
+        <h1 style="color: firebrick; text-align-last: center; text-decoration-line: underline;">CLICK</h1>
+    </body>
+</html>
+END
+```
+**CODE**
+```js
+<html>
+    <head>
+        <title>Arrow event call back</title>
+        <script>
+            function clicked(){
+                console.log("You Clicked!!!");
+                console.log(this)
+            }
+            document.addEventListener("click",clicked);
+        </script>
+    </head>
+    <body>
+        <h1 style="color: firebrick; text-align-last: center; text-decoration-line: underline;">CLICK</h1>
+    </body>
+</html>
+```
+
+**output**
+```
+CLICK
+```
 
 ### 4.Look at the code below, you have a for loop if you have setTimeout inside it. If log the
 loop counter inside setTimeout, what will be logged?
