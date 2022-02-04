@@ -57,29 +57,21 @@ Showvideos: [Function: Showvideos] }
 **PSEUDOCODE**
 ```
 BEGIN
-let findPermutations = (string) => {
-    if (!string || typeof string !== "string"){
-      return "Please enter a string"
-    } else if (string.length < 2 ){
-      return string
-    }
-  
-    // This array will hold our permutations
-    let permutationsArray = [] 
-     
-    for (let i = 0; i < string.length; i++){
-      let char = string[i]
-  
-      // if char was used already, skip this time to remove duplicates
-      if (string.indexOf(char) != i)
-      continue
-      let remainingChars = string.slice(0, i) + string.slice(i + 1, string.length)
-      for (let permutation of findPermutations(remainingChars)){
-        permutationsArray.push(char + permutation) }
-    }
-    return permutationsArray
-  } 
-  findPermutations('aabm');
+INIT findPermutations = (string) => 
+    IF (!string || typeof string !== "string")
+      RETURN "Please enter a string"
+    ELSEIF(string.length < 2 )
+      RETURN string
+    INIT permutationsArray = [] 
+    FOR(let i = 0; i < string.length; i++)
+      INIT char = string[i]
+      IF (string.indexOf(char) != i)
+      CONTINUE
+      INIT remainingChars = string.slice(0, i) + string.slice(i + 1, string.length)
+      FOR (let permutation of findPermutations(remainingChars))
+        permutationsArray.push(char + permutation) 
+    RETURN permutationsArray
+  findPermutations('aabm')
 ```
 
 **CODE**
@@ -260,7 +252,7 @@ mycar.new1();
 ```js
 no new model
 ford
-duster in 2020
+duster in 2020   
 ```
 
 ### 6.How does “this” works inside the Class method with an example?
@@ -273,7 +265,7 @@ duster in 2020
 
 **PSEUDOCODE**
 ```
-BEGIN
+BEGIN 
 CLASS Car 
     constructor(name,year) 
       this.name = name

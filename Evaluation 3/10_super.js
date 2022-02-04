@@ -18,7 +18,7 @@ class Student extends Person {   //child class
     need() {
        return `${this.name} needs a basket ball`;
     }
-    career() {
+    career() {                  
 return`${super.goal()}     //accessing parent properties in child class using super method
        ${super.interest()} 
        ${this.need()}`;
