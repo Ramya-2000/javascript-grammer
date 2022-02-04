@@ -403,12 +403,13 @@ function LevelTwo() {
 ```js
 Inside Level Two!
 ```
-
 ### 9.Create a custom event listener and explain?
 **ALGORITHM**
 Step 1. Use strict mode as public. 
 Step 2. Create a new event as start.
- Step 3. Add the event listener. Step 4. Dispatch the event.
+Step 3. Add the event listener. 
+Step 4. Dispatch the event.
+
 **PSEUDOCODE**
 ```
 BEGIN
