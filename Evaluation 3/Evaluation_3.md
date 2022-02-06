@@ -109,10 +109,10 @@ let findPermutations = (string) => {
 ### 3.What is the difference between when classic and arrow functions are used as event callbacks?
 **Classic Function**
 **Algorithm**
-Step 1. Create a html file. 
-Step 2. Inside the script tag write a function with name of clicked.
-Step 3. Print something inside the function. 
-Step 4. Add event of click then function is executed.
+* Step 1. Create a html file. 
+* Step 2. Inside the script tag write a function with name of clicked.
+* Step 3. Print something inside the function. 
+* Step 4. Add event of click then function is executed.
 **PSEUDOCODE**
 ```
 BEGIN
@@ -130,7 +130,7 @@ BEGIN
     <body>
         <h1 style="color: firebrick; text-align-last: center; text-decoration-line: underline;">CLICK</h1>
     </body>
-</html>
+</html>   
 END
 ```
 **CODE**
@@ -405,34 +405,55 @@ Inside Level Two!
 ```
 ### 9.Create a custom event listener and explain?
 **ALGORITHM**
-Step 1. Use strict mode as public. 
-Step 2. Create a new event as start.
-Step 3. Add the event listener. 
-Step 4. Dispatch the event.
+* Step 1. Create a html file. 
+* Step 2. Inside the script tag write a function with name of clicked.
+* Step 3. Print something inside the function. 
+* Step 4. Add event of click then function is executed.
+
 
 **PSEUDOCODE**
 ```
 BEGIN
-INIT startEvent = new Event("start");
-document.addEventListener("start",FUNCTION(event) PRINT("hello world") PRINT(event),FALSE)
-document.dispatchEvent(startEvent);
+<html>
+    <head>
+        <title>Arrow event call back</title>
+        <script>
+            FUNCTION clicked(){
+                PRINT("You Clicked!!!");
+                PRINT(this)
+            }
+            document.addEventListener("click",clicked);
+        </script>
+    </head>
+    <body>
+        <h1 style="color: firebrick; text-align-last: center; text-decoration-line: underline;">CLICK</h1>
+    </body>
+</html>
+
 END
 ```
 **CODE**
 ```js
-"use strict";
-//create a new custom event  “start”
-let startEvent = new Event("start");
-//listen for the "start" event
-document.addEventListener("start",function(event){console.log("hello world");console.log(event);},false);
-//dispatch the “start” event
-document.dispatchEvent(startEvent);
+<html>
+    <head>
+        <title>Arrow event call back</title>
+        <script>
+            function clicked(){
+                console.log("You Clicked!!!");
+                console.log(this)
+            }
+            document.addEventListener("click",clicked);
+        </script>
+    </head>
+    <body>
+        <h1 style="color: firebrick; text-align-last: center; text-decoration-line: underline;">CLICK</h1>
+    </body>
+</html>
 ```
 **OUTPUT**
 ```js
-hello world
-Event {isTrusted: false, type: 'start', target: document, currentTarget: document, eventPhase: 2, …}
-true
+You Clicked
+
 ```
 
 ### 10.Explain the ‘super’ and ‘constructor’ keywords inside the Class with an example?
