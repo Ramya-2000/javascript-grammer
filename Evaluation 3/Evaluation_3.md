@@ -224,7 +224,8 @@ dragElem.addEventListener( 'click', listener );
 </script>
 
 </body>
-</html>```
+</html>
+```
 
 **output**
 ```js
