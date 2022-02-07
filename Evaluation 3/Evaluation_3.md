@@ -142,7 +142,7 @@ Total number of permutation are : 24
 ​
 ```
 ### 3.What is the difference between when classic and arrow functions are used as event callbacks?
-**Classic Function**
+
 **Algorithm**
 * Step 1. Create a html file. 
 * Step 2. Inside the script tag write a function with name of clicked.
