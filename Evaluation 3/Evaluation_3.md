@@ -56,54 +56,89 @@ Showvideos: [Function: Showvideos] }
 
 **PSEUDOCODE**
 ```
-BEGIN
-INIT findPermutations = (string) => 
-    IF (!string || typeof string !== "string")
-      RETURN "Please enter a string"
-    ELSEIF(string.length < 2 )
-      RETURN string
-    INIT permutationsArray = [] 
-    FOR(let i = 0; i < string.length; i++)
-      INIT char = string[i]
-      IF (string.indexOf(char) != i)
-      CONTINUE
-      INIT remainingChars = string.slice(0, i) + string.slice(i + 1, string.length)
-      FOR (let permutation of findPermutations(remainingChars))
-        permutationsArray.push(char + permutation) 
-    RETURN permutationsArray
-  findPermutations('aabm')
+"use strict"
+INIT string="ABC";
+FUNCTION permutation( string, result)
+    IF(string.length === 0)THEN
+        count++;
+        PRINT(result);
+    ELSE
+        FOR(let i = 0; i < string.length ; i++ )DO
+            let remain = string.substring( 0, i) + string.substring( i + 1 );
+            permutation( remain, result + string[i]);
+        ENDFOR
+    ENDIF
+FUNCTIONEND
+IF(typeof string === "string")THEN
+    IF(string.length > 0)THEN
+        var count = 0;
+        permutation( string, "");
+        PRINT("Total number of permutation are :",count);
+    ELSE
+        PRINT("This is empty string");
+    ENDIF
+
+ELSE
+        PRINT("This is not string")
+ENDIF
 ```
 
 **CODE**
 ```js
-let findPermutations = (string) => {
-    if (!string || typeof string !== "string"){
-      return "Please enter a string"
-    } else if (string.length < 2 ){
-      return string
+"use strict";
+let string="abmn";
+function permutation( string, result){
+    if(string.length === 0){
+        count++;
+        console.log(result);
+    }else{
+        for(let i = 0; i < string.length ; i++ ){
+            let remain = string.substring( 0, i) + string.substring( i + 1 );
+            permutation( remain, result + string[i]);
+        }
     }
-  
-    // This array will hold our permutations
-    let permutationsArray = [] 
-     
-    for (let i = 0; i < string.length; i++){
-      let char = string[i]
-  
-      // if char was used already, skip this time to remove duplicates
-      if (string.indexOf(char) != i)
-      continue
-      let remainingChars = string.slice(0, i) + string.slice(i + 1, string.length)
-      for (let permutation of findPermutations(remainingChars)){
-        permutationsArray.push(char + permutation) }
+}
+if(typeof string === "string"){
+    if(string.length > 0){
+        var count = 0;
+        permutation( string, "");
+        console.log("Total number of permutation are :",count);
+    }else{
+        console.log("This is empty string");
     }
-    return permutationsArray
-  } 
-  findPermutations('aabm');
-  ```
+
+}else{
+    console.log("This is not string")
+}
+```
 
 **OUTPUT**
 ```js
-  Array(12) [ "aabm", "aamb", "abam", "abma", "amab", "amba", "baam", "bama", "bmaa", "maab","maba","mbaa" ]
+abmn 
+abnm 
+ambn 
+amnb 
+anbm 
+anmb 
+bamn 
+banm 
+bman 
+bmna 
+bnam 
+bnma 
+mabn 
+manb 
+mban 
+mbna 
+mnab 
+mnba 
+nabm 
+namb 
+nbam 
+nbma
+nmab 
+nmba 
+Total number of permutation are : 24
 ​
 ```
 ### 3.What is the difference between when classic and arrow functions are used as event callbacks?
@@ -117,44 +152,83 @@ let findPermutations = (string) => {
 ```
 BEGIN
 <html>
-    <head>
-        <title>Arrow event call back</title>
-        <script>
-            FUNCTION clicked(){
-                PRINT("You Clicked!!!");
-                PRINT(this)
-            }
-            document.addEventListener("click",clicked);
-        </script>
-    </head>
-    <body>
-        <h1 style="color: firebrick; text-align-last: center; text-decoration-line: underline;">CLICK</h1>
-    </body>
-</html>   
+<body>
+
+<h2>Event callback</h2>
+
+<p id="demo"></p>
+
+<button id="myBtn" class = 'draggable'>Click to change text color</button>
+
+<p id="demo2">Hello world !</p>
+
+<script>
+
+var dragElem = document.querySelector('.draggable');
+
+var listener = {
+  greeting: 'Welcome',
+  color : 'blue',
+  color2 : 'red',
+  handleEvent: function( event ) {
+  console.log( this.greeting + event.type );
+  document.getElementById("demo2").style.color = this.color;
+  },
+  handleEvent: ( event ) => {
+    console.log( this.greeting + event.type );
+    document.getElementById("demo2").style.color = this.color2;
+dragElem.addEventListener( 'click', listener );
+
+</script>
+
+</body>
+</html>
 END
 ```
 **CODE**
 ```js
+<!DOCTYPE html>
 <html>
-    <head>
-        <title>Arrow event call back</title>
-        <script>
-            function clicked(){
-                console.log("You Clicked!!!");
-                console.log(this)
-            }
-            document.addEventListener("click",clicked);
-        </script>
-    </head>
-    <body>
-        <h1 style="color: firebrick; text-align-last: center; text-decoration-line: underline;">CLICK</h1>
-    </body>
-</html>
-```
+<body>
+
+<h2>Event callback</h2>
+
+<p id="demo"></p>
+
+<button id="myBtn" class = 'draggable'>Click to change text color</button>
+
+<p id="demo2">Hello world !</p>
+
+<script>
+
+var dragElem = document.querySelector('.draggable');
+
+var listener = {
+  greeting: 'Welcome',
+  color : 'blue',
+  color2 : 'red',
+  handleEvent: function( event ) {     //classic function
+  console.log( this.greeting + event.type );
+  document.getElementById("demo2").style.color = this.color;
+  },
+  handleEvent: ( event ) => {         //arrow function
+    console.log( this.greeting + event.type );
+    document.getElementById("demo2").style.color = this.color2;
+  },
+  
+};
+
+dragElem.addEventListener( 'click', listener );
+
+
+</script>
+
+</body>
+</html>```
 
 **output**
-```
-CLICK
+```js
+welcomeclick
 ```
 
 ### 4.Look at the code below, you have a for loop if you have setTimeout inside it. If log the

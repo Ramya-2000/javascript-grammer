@@ -1,24 +1,25 @@
 "use strict";
-let findPermutations = (string) => {
-    if (!string || typeof string !== "string"){
-      return "Please enter a string"
-    } else if (string.length < 2 ){
-      return string
+let string="abmn";
+function permutation( string, result){
+    if(string.length === 0){
+        count++;
+        console.log(result);
+    }else{
+        for(let i = 0; i < string.length ; i++ ){
+            let remain = string.substring( 0, i) + string.substring( i + 1 );
+            permutation( remain, result + string[i]);
+        }
     }
-  
-    // This array will hold our permutations
-    let permutationsArray = [] 
-     
-    for (let i = 0; i < string.length; i++){
-      let char = string[i]
-  
-      // if char was used already, skip this time to remove duplicates
-      if (string.indexOf(char) != i)
-      continue
-      let remainingChars = string.slice(0, i) + string.slice(i + 1, string.length)
-      for (let permutation of findPermutations(remainingChars)){
-        permutationsArray.push(char + permutation) }
+}
+if(typeof string === "string"){
+    if(string.length > 0){
+        var count = 0;
+        permutation( string, "");
+        console.log("Total number of permutation are :",count);
+    }else{
+        console.log("This is empty string");
     }
-    return permutationsArray
-  } 
-  findPermutations('aabm');
+
+}else{
+    console.log("This is not string")
+}

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>Event callback</h2>
+
+<button id="myBtn" class = 'draggable'>Click to change text color</button>
+
+<p id="demo2">Hello world !</p>
+
+<script>
+
+var dragElem = document.querySelector('.draggable');
+
+var listener = {
+  greeting: 'Welcome',
+  color : 'blue',
+  color2 : 'red',
+  handleEvent: function( event ) {
+  console.log( this.greeting + event.type );
+  document.getElementById("demo2").style.color = this.color;
+  },
+//   handleEvent: ( event ) => {
+//     console.log( this.greeting + event.type );
+//     document.getElementById("demo2").style.color = this.color2;
+//   },
+  
+};
+
+dragElem.addEventListener( 'click', listener );
+
+
+</script>
+
+</body>
+</html>
