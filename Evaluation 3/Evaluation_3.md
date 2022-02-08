@@ -488,9 +488,9 @@ Inside Level Two!
 ### 9.Create a custom event listener and explain?
 **ALGORITHM**
 * Step 1. Create a html file. 
-* Step 2. Inside the script tag write a function.
+* Step 2. Inside the script tag write a function and give the text color.
 * Step 3. Whent the event is dispatched event1 is called. 
-* Step 4. Add event of click then function is executed.
+* Step 4. Run it in browser and so that color is changed and displayed.
 
 
 **PSEUDOCODE**
