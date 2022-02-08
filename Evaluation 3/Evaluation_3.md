@@ -14,7 +14,10 @@ BEGIN
     languages: ["tamil","english"],
     subscribe : () => {
         RETURN(this.title)
-    Showvideos(){
+    Showvideos(){ 
+        INIT sub = () =>
+           RETURN this.title
+        sub()
         RETURN (this)
 channel.subscribe() 
 channel.Showvideos()
@@ -261,7 +264,7 @@ FOR(var i = 0; i <10; i++)
     function a(i)
  setTimeout(function() 
     RETURN (i)
-    },  500 * i)
+    },  500 * (i+1))
     ENDFOR
 a(i)
 
@@ -273,7 +276,7 @@ for (var i = 0; i <10; i++) {
     function a(i){
  setTimeout(function() { 
     console.log(i);
-    },  500 * i);
+    },  500 * (i+1));
 }a(i);
 }
 ```
