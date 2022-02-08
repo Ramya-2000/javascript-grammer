@@ -66,7 +66,7 @@ Javascript
 **PSEUDOCODE**
 ```
 "use strict"
-INIT string="ABC";
+INIT string="abmn";
 FUNCTION permutation( string, result)
     IF(string.length === 0)THEN
         count++;
