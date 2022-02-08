@@ -6,8 +6,6 @@ const myFunction = () => {
   // call it
   myFunction();  //Output is {}
 
-  
-
   "use strict";
   const channel={
     title: "Javascript",
@@ -16,6 +14,10 @@ const myFunction = () => {
         console.log(this.title); //arrow function doesnot bind 'this'
     },
     Showvideos(){
+        let sub = () => {
+            console.log(this.title);
+        }
+        sub();
         console.log(this); //normal function bind 'this'
     },
 };

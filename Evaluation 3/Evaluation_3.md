@@ -31,19 +31,25 @@ END
         console.log(this.title); //arrow function doesnot bind 'this'
     },
     Showvideos(){
+        let sub = () => {
+            console.log(this.title);
+        }
+        sub();
         console.log(this); //normal function bind 'this'
     },
 };
 channel.subscribe(); 
 channel.Showvideos();
+
 ```
 **OUTPUT**
 ```js
 undefined
+Javascript
 { title: 'Javascript',
-languages: [ 'tamil', 'english' ],
-subscribe: [Function: subscribe],
-Showvideos: [Function: Showvideos] }
+  languages: [ 'tamil', 'english' ],
+  subscribe: [Function: subscribe],
+  Showvideos: [Function: Showvideos] }
 ```
 
 ### 2.How would you create all permutations of a string?
@@ -148,6 +154,7 @@ Total number of permutation are : 24
 * Step 2. Inside the script tag write a function with name of clicked.
 * Step 3. Print something inside the function. 
 * Step 4. Add event of click then function is executed.
+
 **PSEUDOCODE**
 ```
 BEGIN
