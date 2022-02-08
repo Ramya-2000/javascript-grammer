@@ -18,7 +18,7 @@ const myFunction = () => {
             console.log(this.title);
         }
         sub();
-        console.log(this); //normal function bind 'this'
+        console.log(this.languages); //normal function bind 'this'
     },
 };
 channel.subscribe(); 

@@ -38,7 +38,7 @@ END
             console.log(this.title);
         }
         sub();
-        console.log(this); //normal function bind 'this'
+        console.log(this.languages); //normal function bind 'this'
     },
 };
 channel.subscribe(); 
@@ -49,10 +49,7 @@ channel.Showvideos();
 ```js
 undefined
 Javascript
-{ title: 'Javascript',
-  languages: [ 'tamil', 'english' ],
-  subscribe: [Function: subscribe],
-  Showvideos: [Function: Showvideos] }
+[ 'tamil', 'english' ]
 ```
 
 ### 2.How would you create all permutations of a string?
