@@ -488,48 +488,79 @@ Inside Level Two!
 ### 9.Create a custom event listener and explain?
 **ALGORITHM**
 * Step 1. Create a html file. 
-* Step 2. Inside the script tag write a function with name of clicked.
-* Step 3. Print something inside the function. 
+* Step 2. Inside the script tag write a function.
+* Step 3. Whent the event is dispatched event1 is called. 
 * Step 4. Add event of click then function is executed.
 
 
 **PSEUDOCODE**
 ```
 BEGIN
+<!DOCTYPE html>
 <html>
-    <head>
-        <title>Arrow event call back</title>
-        <script>
-            FUNCTION clicked(){
-                PRINT("You Clicked!!!");
-                PRINT(this)
-            }
-            document.addEventListener("click",clicked);
-        </script>
-    </head>
-    <body>
-        <h1 style="color: firebrick; text-align-last: center; text-decoration-line: underline;">CLICK</h1>
-    </body>
-</html>
+<body>
 
+<h2 id="header">hello</h2>
+
+<script>
+
+const header = document.getElementById("header");
+
+header.addEventListener("changeColor", function (e) {
+  header.style.color = e.detail.textColor;
+});
+
+function changeColor(color) {
+  const event1 = new CustomEvent("changeColor", {
+    detail: {
+      textColor: color,
+    },
+  });
+
+  header.dispatchEvent(event1);
+}
+
+changeColor("blue");
+
+
+</script>
+
+</body>
+</html>
 END
 ```
 **CODE**
 ```js
+<!DOCTYPE html>
 <html>
-    <head>
-        <title>Arrow event call back</title>
-        <script>
-            function clicked(){
-                console.log("You Clicked!!!");
-                console.log(this)
-            }
-            document.addEventListener("click",clicked);
-        </script>
-    </head>
-    <body>
-        <h1 style="color: firebrick; text-align-last: center; text-decoration-line: underline;">CLICK</h1>
-    </body>
+<body>
+
+<h2 id="header">hello</h2>
+
+<script>
+
+const header = document.getElementById("header");
+
+header.addEventListener("changeColor", function (e) {
+  header.style.color = e.detail.textColor;
+});
+
+function changeColor(color) {
+  const event1 = new CustomEvent("changeColor", {
+    detail: {
+      textColor: color,
+    },
+  });
+
+  header.dispatchEvent(event1);
+}
+
+changeColor("blue");
+
+
+</script>
+
+</body>
 </html>
 ```
 **OUTPUT**
