@@ -38,7 +38,7 @@ END
             console.log(this.title);
         }
         sub();
-        console.log(this.languages); //normal function bind 'this'
+        console.log(this.languages); 
     },
 };
 channel.subscribe(); 
@@ -104,7 +104,7 @@ function permutation( string, result){
         }
     }
 }
-if(typeof string === "string"){
+if(typeof string === "string"){    //validation
     if(string.length > 0){
         var count = 0;
         permutation( string, "");
